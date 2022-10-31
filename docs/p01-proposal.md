@@ -37,6 +37,7 @@ Assuming that this ends up being the case, the primary implication for policymak
 We hope the results from this research can be used to better guide and improve the experience people get on social media.
 
 #### Limitations
+When working with social media datasets, one main limitation we have to consider is that social media platforms are often filled with duplicate, fake profiles. There’s essentially no limit to the number of accounts a person can have, provided that they have a different form of contact to set up the account. Moreover, because the dataset we have is essentially from various Reddit threads, the methods used to identify stress are limited to key words and subreddits titled as “anxiety”, “ptsd”, “assistance,” etc. There may be greater amounts of stress shown from other categories of Reddit communities, yet, our dataset is limited to a certain extent. It’s also sometimes in a person’s self-interest to exaggerate when they’re using social media as a venting mechanism, which can cause the algorithm to detect more stress than the person actually has. Lastly, it’s important to note that the data we obtained comes only from Reddit, and our conclusions from this can’t be directly generalized to other social media sites as well. 
 
 #### Acknowledgements
 
