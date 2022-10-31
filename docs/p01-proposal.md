@@ -27,7 +27,8 @@
 3. Which online communities have an increased risk for stress, and what do they have in common? Many of the subreddits we will examine consist of people struggling with homelessness, poverty, and various forms of trauma, or are otherwise struggling with a real-world situation. How can we tell whether the stress indicators recorded are affected by social media use?
 
 #### The Dataset
-
+(Still a work in progress)
+Table
 | | Data Files|
 |---------------| --------------
 |Name | dreaddit-test.csv, dreaddit-train.csv
