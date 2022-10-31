@@ -1,6 +1,9 @@
-# A Project Proposal
+# Analyzing Stress and Social Media through Reddit
 
-### Code Name
+### Code name: stress snoo
+
+snoo is reddit's logo
+
 
 | | Brief Description|
 |---------------| --------------
@@ -9,12 +12,13 @@
 | Date | Autumn Quarter 2022
 
 #### Abstract
+Our main goal with this research project is to find links and correlations between social media and stress. This question is important to us because social media's growing influence in modern society and our lives is coming to odds with a growing societal conciousness towards the value of stress balancing and mental health. To address this concern, we will do an analysis of a dataset containing over 700 Reddit posts for stress indicators gathered from various subreddits.
 
 #### Keywords:
-- Informative
-- Descriptive
-- Statistical
-- Presentable
+- stress analysis
+- social media
+- reddit data analysis
+- social media and stress
 
 #### Introduction
 
@@ -52,4 +56,5 @@ When working with social media datasets, one main limitation we have to consider
 #### Acknowledgements
 
 
-#### Appendix
+#### References
+1. Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021, https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv. 
