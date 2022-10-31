@@ -32,16 +32,23 @@ Within today's society there is access to a surplus of information on social med
 3. Which online communities have an increased risk for stress, and what do they have in common? Many of the subreddits we will examine consist of people struggling with homelessness, poverty, and various forms of trauma, or are otherwise struggling with a real-world situation. How can we tell whether the stress indicators recorded are affected by social media use?
 
 #### The Dataset
-(Still a work in progress)
-Table
+
+##### About
+From the website kaggle, we found two datasets that directly correlate to the topic entitled "Stress Analysis in Social Media". Each file contains a 100+ quotes that come from a range of users found off of Reddit, and in one way or another, are deemed to show implications of stress shown in and through social media use. While file "dreaddit-test" has more recorded observations than "dreddit-train", they both provide information such as user id, subreddit name, sentence range, text, and confidence level, etc. 
+
+##### Table
 | | Data Files|
 |---------------| --------------
-|Name | dreaddit-test.csv, dreaddit-train.csv
+|Name | We will have two datasets: dreaddit-test.csv, dreaddit-train.csv
 | Purpose | These datasets contain lengthy multi-domain social media data for identifying stress from five different categories of Reddit communities.
 | Number of Observations | dreaddit-test has 716 rows. dreaddit-train has 2839 rows.
 | Number of Rows | Each dataset has 116 rows
-| Citation | Turcan, E., & McKeown, K. (2019). Dreaddit: A Reddit dataset for stress analysis in social media. arXiv preprint arXiv:1911.00133.
-| URL | https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&select=dreaddit-train.csv
+| Citation | Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021
+| URL | Both data files can be found at https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv
+
+##### Answering Our Research Questions
+Based on the data provided, it can help us form possible conclusions to our research questions. If we analyze the amount of times that terms such as "social media" or "instagram" appear, we can see the frequency at which online platforms negatively affect the mental wellbeing of the individuals in our data pool. Moreover, if we were able to carefully look through each grouped subreddit, it's possible for us to recognize which online communities experience more or less stress. For example, quotes obtained from subreddit "ptsd" might contain more heavy stress indicators than quotes obtained from subreddit "assistance", or vice versa. Hopefully, this will allow us to find common factors that routinely appear to affect mental health, and see how the presence of social media further multiplies that effect.
+
 
 #### Expected Implications
 
