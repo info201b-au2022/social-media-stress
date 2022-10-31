@@ -23,7 +23,7 @@
 #### Research Questions
 
 1. What impact does social media have on people’s levels of stress? Through this question, we aim to find and explain the link between social media and mental health by examining indicators of stress across online communities on social media apps like Reddit. Is social media a contributing stressor, or does it help alleviate stress by allowing others to meet people with similar experiences?
-2. Are people engaged in online communities geared towards sensitive topics more or less likely to experience elevated levels of stress? Many people join online communities like r/relationships or r/ptsd on Reddit to find others that have similar experiences and share their own experiences. Does exposure to these communities worsen stress?
+2. Are people engaged in online communities geared towards sensitive topics more or less likely to experience elevated levels of stress? Many people join online communities like r/relationships or r/ptsd on Reddit to find others that have similar experiences and share their own personal experiences. Does exposure to these communities worsen stress?
 3. Which online communities have an increased risk for stress, and what do they have in common? Many of the subreddits we will examine consist of people struggling with homelessness, poverty, and various forms of trauma, or are otherwise struggling with a real-world situation. How can we tell whether the stress indicators recorded are affected by social media use?
 
 #### The Dataset
