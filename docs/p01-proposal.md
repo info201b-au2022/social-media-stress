@@ -23,6 +23,7 @@ Our main goal with this research project is to find links and correlations betwe
 #### Introduction
 Within today's society there is access to a surplus of information on social media, and many times this can lead to mental stress for individuals. Social media can more often increase the fear of missing out, feelings of inadequacy, dissatisfaction, as well as isolation. In result these feelings can negatively affect one's mood and worsen symptoms of depression, anxiety, and stress. The analyzed information that we provide within this project, includes datasets consisting of multi-domain social media data used for identifying stress from five different categories of Reddit communities. The five categories consist of Health, Online Communities, Social Networks, Text Data, and Mental Health.
 #### Problem Domain
+(Still working on this section)
 
 #### Research Questions
 
