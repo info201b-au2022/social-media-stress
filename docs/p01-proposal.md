@@ -21,7 +21,7 @@ Our main goal with this research project is to find links and correlations betwe
 - social media and stress
 
 #### Introduction
-
+Within today's society there is access to a surplus of information on social media, and many times this can lead to mental stress for individuals. Social media can more often increase the fear of missing out, feelings of inadequacy, dissatisfaction, as well as isolation. In result these feelings can negatively affect one's mood and worsen symptoms of depression, anxiety, and stress. The analyzed information that we provide within this project, includes datasets consisting of multi-domain social media data used for identifying stress from five different categories of Reddit communities. The five categories consist of Health, Online Communities, Social Networks, Text Data, and Mental Health.
 #### Problem Domain
 
 #### Research Questions
@@ -51,10 +51,10 @@ Assuming that this ends up being the case, the primary implication for policymak
 We hope the results from this research can be used to better guide and improve the experience people get on social media.
 
 #### Limitations
-When working with social media datasets, one main limitation we have to consider is that social media platforms are often filled with duplicate, fake profiles. There’s essentially no limit to the number of accounts a person can have, provided that they have a different form of contact to set up the account. Moreover, because the dataset we have is essentially from various Reddit threads, the methods used to identify stress are limited to key words and subreddits titled as “anxiety”, “ptsd”, “assistance,” etc. There may be greater amounts of stress shown from other categories of Reddit communities, yet, our dataset is limited to a certain extent. It’s also sometimes in a person’s self-interest to exaggerate when they’re using social media as a venting mechanism, which can cause the algorithm to detect more stress than the person actually has. Lastly, it’s important to note that the data we obtained comes only from Reddit, and our conclusions from this can’t be directly generalized to other social media sites as well. 
+When working with social media datasets, one main limitation we have to consider is that social media platforms are often filled with duplicate, fake profiles. There’s essentially no limit to the number of accounts a person can have, provided that they have a different form of contact to set up the account. Moreover, because the dataset we have is essentially from various Reddit threads, the methods used to identify stress are limited to key words and subreddits titled as “anxiety”, “ptsd”, “assistance,” etc. There may be greater amounts of stress shown from other categories of Reddit communities, yet, our dataset is limited to a certain extent. It’s also sometimes in a person’s self-interest to exaggerate when they’re using social media as a venting mechanism, which can cause the algorithm to detect more stress than the person actually has. Lastly, it’s important to note that the data we obtained comes only from Reddit, and our conclusions from this can’t be directly generalized to other social media sites as well.
 
 #### Acknowledgements
 
 
 #### References
-1. Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021, https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv. 
+1. Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021, https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv.
