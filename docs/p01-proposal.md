@@ -12,7 +12,7 @@ snoo is reddit's logo
 | Date | Autumn Quarter 2022
 
 #### Abstract
-Our main goal with this research project is to find links and correlations between social media and stress. This question is important to us because social media's growing influence in modern society and our lives is coming to odds with a growing societal conciousness towards the value of stress balancing and mental health. To address this concern, we will do an analysis of a dataset containing over 700 Reddit posts for stress indicators gathered from various subreddits.
+Our main goal with this research project is to find links and correlations between social media and stress. This question is important to us because social media's growing influence in modern society and our lives is coming to odds with a growing societal conciousness towards the value of stress balancing and mental health. To address this concern, we will do an analysis of a dataset containing over 700 Reddit posts gathered from various subreddits.
 
 #### Keywords:
 - stress analysis
