@@ -28,6 +28,15 @@
 
 #### The Dataset
 
+| | Data Files|
+|---------------| --------------
+|Name | dreaddit-test.csv, dreaddit-train.csv
+| Purpose | These datasets contain lengthy multi-domain social media data for identifying stress from five different categories of Reddit communities.
+| Number of Observations | dreaddit-test has 716 rows. dreaddit-train has 2839 rows.
+| Number of Rows | Each dataset has 116 rows
+| Citation | Turcan, E., & McKeown, K. (2019). Dreaddit: A Reddit dataset for stress analysis in social media. arXiv preprint arXiv:1911.00133.
+| URL | https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&select=dreaddit-train.csv
+
 #### Expected Implications
 
 There are many implications that can be discerned concerning the results of our research question, which aims to see the ties between social media usage and stress. Before talking about the implications, we should mention the expected results of the research question. I would expect there to be a correlation between social media and stress, whether it be social media that begets stress or social media being used as a way to vent stress.
