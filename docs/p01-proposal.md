@@ -34,7 +34,7 @@ Within today's society there is access to a surplus of information on social med
 https://www.newyorker.com/magazine/2018/03/19/reddit-and-the-struggle-to-detoxify-the-internet.
 
 ##### Benefits and Harms:
-Benefits of this data analyzation is the fact that we as viewers of this data can find the correlation and links of stress and social media with key words through this algorithm and receive a clear and concise number from the given pool of selected reddit posts. Harms may include the fact that, it can not be assumed or concluded that this data count can be utilized as evidence for an accurate and persuasive argument, this data can be used as an example to prove the point that there is correlation between stress and social media, however to make a general claim off this data would be false information.
+- Benefits of this data analyzation is the fact that we as viewers of this data can find the correlation and links of stress and social media with key words through this algorithm and receive a clear and concise number from the given pool of selected reddit posts. Harms may include the fact that, it can not be assumed or concluded that this data count can be utilized as evidence for an accurate and persuasive argument, this data can be used as an example to prove the point that there is correlation between stress and social media, however to make a general claim off this data would be false information.
 
 #### Research Questions
 
