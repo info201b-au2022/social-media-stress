@@ -1,0 +1,2 @@
+# Tell linguist ipynb is just documentation
+*.ipynb linguist-documentation
