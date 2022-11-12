@@ -6,7 +6,7 @@ from textblob import TextBlob
 
 # Read the csv into a dataframe
 
-tweets_df = pd.read_csv('Tweets 11-9-2022.csv')
+tweets_df = pd.read_csv('Tweets 11-10-2022.csv')
 
 # If the polarity is above 0.05, it is positive.
 # If below -0.05 it is negative
@@ -47,7 +47,7 @@ tweets_df['Intensity'] = tweets_df.apply(lambda x: get_intensity(x['Subjectivity
 
 # Put this into a CSV
 
-tweets_df.to_csv('Tweets 11-9-2022 with Sentiment.csv', index=False)
+tweets_df.to_csv('Tweets 11-10-2022 with Sentiment.csv', index=False)
 
 # We probably want to graph positive vs negative vs neutral.
 # Maybe all neutrals need to be pruned.
