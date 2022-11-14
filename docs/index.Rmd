@@ -46,11 +46,17 @@ summary(cars)
 
 ## Summary Table
 
-## Including Plots
+## Plots
+
+###ScatterPlot
 ```{r}
 chart1
 ```
 This scatterplot shows the average tone quantified in a numerical value from 10 different subreddits. Here, the tone is quantified in a way that a higher numerical value correlates with a "more positive" tone. Whereas, a lower numerical value correlates with a "more negative tone". Possible tone ranges range from 0 to 100. From the graph, we see that the subreddit "food_pantry" has the highest tone, meaning that the least amount of stress was detected in it. On the other hand, subreddits such as "stress" and "domesticviolence" had the lowest tone, meaning that a lot more stress was detected from there. 
+
+###Plot 2
+
+###Plot3
 
 You can also embed plots, for example:
 
