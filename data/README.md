@@ -1,24 +1,19 @@
-# The `\data` Directory: Project Data Summary 
+# Data
 
-In our project, we use the following data files and Application Programming Interfaces:
+In this project, we are making use of two datasets.
+
+## Dataset 1: Dreaddit
+
+The first dataset is a [Kaggle dataset](https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media) derived from a report called [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://aclanthology.org/D19-6213/). This dataset aims to analyze Reddit posts in relation to stress. This is done through the use of a machine learning model that involves corpus analysis and the use of Amazon Mechanical Turk workers. We are using the test data which consists of 715 posts, while the train data is around 2500+ posts.
+
+## Dataset 2: Twitter
+
+Using the snscrape library in Python, I was able to pull the latest 3500 tweets from around 12:30 AM 11/10/2022. After the csv was created, I cleaned and manipulated some of it with Pandas in order to run through the textblob library, a library generally meant for simple sentiment analysis and it produced the polarity and objectivity columns. I was concerned about the accuracy of this, as the majority of it was classified as neutral sentiment, so I added another model from HuggingFace. This one was more accurate as it is a trained model which had been trained on over 150,000 tweets. Both of these are represented in the dataset.
 
 ## Data files (TODO: Update/delete for your PROJECT)
-|Data File Name | Brief Description|
+|Data File/Folder Name | Brief Description|
 |---------------| -----------------|
-|[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ... 
-
-## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
-
-* **New York Times Books API**. The _New York Times_ provides data for Best
-Sellers lists and the books that have been reviewed in the New York Times. An overview of the API that we use in our project is available here: [Books API](https://developer.nytimes.com/docs/books-product/1/overview). For more about developing apps with New York Times data see: [NYTimes Developers](https://developer.nytimes.com/).
-
-# Developer notes: About the `/data` Directory (TODO: Read and delete this section)
-
-* Use the `/data` directory to store any data that you using in your project (for example, CSV files)
-* Edit this `README.md` file and summarize your data files
-* If you are using APIs to access data, summarize them, providing specific information
-* See examples above.
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
-aim for clarity and conciseness.
-* When done, be sure to delete these NOTE sections and the example CSV file (which are intended for you, of course, not your audience!)
+|[Dreaddit Dataset.csv](./Dreaddit-Dataset.csv) | This file is the Reddit test data.
+|[Twitter Sentiment Dataset.csv](./Twitter-Sentiment-Dataset.csv) | This is the Twitter data.
+| raw | The raw folder are the datasets before cleaning and processing with sentiment analysis.
+| py-scripts | source scripts and jupyter notebooks for the sentiment analysis
