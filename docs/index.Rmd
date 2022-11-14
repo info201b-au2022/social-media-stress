@@ -7,13 +7,13 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library("knitr")
+library("dplyr")
+source("~/Documents/info201/Project/Project-11-BC/source/chart1.R")
 ```
+#Stress Detection and Analysis in Popular Social Media Platforms
 
-## What is this file for?
-
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
-
-* Please see Canvas for more details.
+##Summary Paragraph
 
 ## ACCESSING THE /source DIRECTORY
 ### Example 1: Source some code and run a function
@@ -42,8 +42,15 @@ When you click the **Knit** button a document will be generated that includes bo
 ```{r cars}
 summary(cars)
 ```
+## Summary Paragraph
+
+## Summary Table
 
 ## Including Plots
+```{r}
+chart1
+```
+This scatterplot shows the average tone quantified in a numerical value from 10 different subreddits. Here, the tone is quantified in a way that a higher numerical value correlates with a "more positive" tone. Whereas, a lower numerical value correlates with a "more negative tone". Possible tone ranges range from 0 to 100. From the graph, we see that the subreddit "food_pantry" has the highest tone, meaning that the least amount of stress was detected in it. On the other hand, subreddits such as "stress" and "domesticviolence" had the lowest tone, meaning that a lot more stress was detected from there. 
 
 You can also embed plots, for example:
 

@@ -12,7 +12,7 @@ dreaddit_data <-dreaddit %>%
   summarize(Tone = mean(Tone), na.rm = TRUE)
 
 #create scatterplot 
-ggplot(data = dreaddit_data) +
+chart1 = ggplot(data = dreaddit_data) +
   geom_point(mapping = aes(x = Subreddit, y = Tone)) +
   coord_flip() +
   labs(title = "Average Tone by Subreddit") 
