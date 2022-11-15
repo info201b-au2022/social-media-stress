@@ -1,7 +1,7 @@
 library("dplyr")
 
-reddit_data <- read.csv(paste(getwd(), "/data/Dreaddit-Dataset.csv", sep = ""))
-twitter_data <- read.csv(paste(getwd(), "/data/Twitter-Sentiment-Dataset.csv", sep = ""))
+reddit_data <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Dreaddit-Dataset.csv")
+twitter_data <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Twitter-Sentiment-Dataset.csv")
 
 emotions_by_stress <- reddit_data %>%
   group_by(Stress) %>%
