@@ -14,7 +14,6 @@ library("dplyr")
 ## Stress Detection and Analysis in Popular Social Media Platforms
 
 
-
 ```{r, echo = FALSE}
 library("knitr")
 source("~/Documents/info201/Project/Project-11-BC/source/summary_table.R")
