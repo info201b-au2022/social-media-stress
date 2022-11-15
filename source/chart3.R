@@ -19,7 +19,7 @@ twt_doc <- tm_map(twt_doc, content_transformer(tolower))
 twt_doc <- tm_map(twt_doc, removeWords, stopwords("english"))
  
 #create wordcloud
-wordcloud(twt_doc,
+chart3 <- wordcloud(twt_doc,
           max.words = 100,
           random.order = FALSE,
           colors = brewer.pal(8, "Dark2"))

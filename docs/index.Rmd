@@ -9,59 +9,65 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library("knitr")
 library("dplyr")
-source("~/Documents/info201/Project/Project-11-BC/source/chart1.R")
+
 ```
-#Stress Detection and Analysis in Popular Social Media Platforms
+## Stress Detection and Analysis in Popular Social Media Platforms
 
-##Summary Paragraph
 
-## ACCESSING THE /source DIRECTORY
-### Example 1: Source some code and run a function
-```{r}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-source("../source/data_access.R")
-data_access_test()
-```
 
-### Example 2: Initialize a variable and then use it
-```{r}
-# Example 1: This function was "sourced" above
-msg <- data_access_test(" Morgan!")
+```{r, echo = FALSE}
+library("knitr")
+source("~/Documents/info201/Project/Project-11-BC/source/summary_table.R")
+most_stressed_percent <- max(emotions_by_subreddit$`Stressed Percentage`)
+most_stressed_subreddit <- emotions_by_subreddit[emotions_by_subreddit$`Stressed Percentage` == most_stressed_percent, 1]
+least_stressed_percent <- min(emotions_by_subreddit$`Stressed Percentage`)
+least_stressed_subreddit <- emotions_by_subreddit[emotions_by_subreddit$`Stressed Percentage` == least_stressed_percent, 1]
+ns_negative_emotion <- emotions_by_stress[1, 6]
+s_negative_emotion <- emotions_by_stress[2, 6]
 ```
 
-> `r msg` Hope you have a good day!! 
+### Dynamic Paragraph
 
-## ABOUT THIS FILE: 
+Altogether, we have used two datasets in our project. The first dataset is from a Reddit analysis of stress from 10 subreddits. Here, we can easily group our data into two categories:  `r emotions_by_stress$Stress`. From there, we can identify which subreddit has the highest proportion of being stress identified. Based on our summary table, `r most_stressed_subreddit` was the subreddit that had the highest stress percentage out of all the others, where `r most_stressed_percent` of the posts were deemed as "stressed". Whereas, `r least_stressed_subreddit` had the lowest stress percentage, where `r least_stressed_percent` of the posts were deemed as "stressed". Not stressed texts had an average negative emotion rating of `r ns_negative_emotion`. Stressed texts had an average negative emotion rating of `r s_negative_emotion`.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+From the Dreaddit dataset alone, it seems that the majority of the Reddit posts in the study showed at least some indications of stress. However, it's also important to look at other social media platforms, so our group decided to use the Twitter Sentiment Dataset. Based on the most recent tweets from around 12:30 AM 11/10/2022, we were able to group which tweets were most postive and most negative. The most confidently postive tweet was: "`r most_confident_pos_hugging`". Whereas, the most confidently negative tweet was: "`r most_confident_neg_hugging`".
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+### Summary Table
+```{r, echo = FALSE}
+source("../source/summary_table.R")
+kable(emotions_by_stress, caption="Emotions Found in Dreddit Dataset", digits=2)
+kable(emotions_by_subreddit, caption="Stress Found in Subreddits", digits=2)
 ```
-## Summary Paragraph
+In this portion, I included two tables that summarize the Reddit dataset nicely. The first table contains the summary information of all the emotions detected in both "stressed" and "not stressed" posts. Posts that are deemed as stressed often have a higher value in emotions pertaining to anxiety, anger, sadness, and negativity. The second table contains the summary information of the percentage of stress detected among the posts in separate, individual subreddits. The higher the tone, the more positive and less stressful it is. Subreddits such as "stress" and "domesticviolence" are shown to contain the highest amounts of stress and negativity. 
 
-## Summary Table
+### Plots
 
-## Plots
+#### ScatterPlot
 
-###ScatterPlot
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("../source/chart1.R")
 chart1
 ```
+
 This scatterplot shows the average tone quantified in a numerical value from 10 different subreddits. Here, the tone is quantified in a way that a higher numerical value correlates with a "more positive" tone. Whereas, a lower numerical value correlates with a "more negative tone". Possible tone ranges range from 0 to 100. From the graph, we see that the subreddit "food_pantry" has the highest tone, meaning that the least amount of stress was detected in it. On the other hand, subreddits such as "stress" and "domesticviolence" had the lowest tone, meaning that a lot more stress was detected from there. 
 
-###Plot 2
 
-###Plot3
+#### Plot 2
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("../source/chart2.R")
+summary(dreaddit)
 ```
+For our second graph, we have a full summary of the reddit dreaddit data. Quantifying factors such as positive emotion, negative emotion, anxiety, anger, sadness, power, etc., we're able to see which emotional category most of the reddit texts fall under. There's a lot of data to analyze, but if we look at the main points such as "positive emotion" and "negative emotion", more reddit texts are deemed to contain a negative feeling than a positive one. Moreover, among the emotions detected, anxiety was the most common one followed by anger. Even factors such as authenticity is quantified, with a higher number correlating to being more "real" and genuine. Moreover, based on the model confidence, we can see how certain the algorithm was on determining whether a particular dataset had indications of showing stress or not.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#### Word Cloud
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("../source/chart3.R")
+chart3
+```
+This word cloud shows the top 100 words that consistently appears in the "Twitter Sentiment Dataset". The more that a specific word appears or is used by someone, the bigger and bolder it appears in the chart. Upon first glance, we see that words such as "will" and "like" appear to be the largest and most used. Because those words are what we consider to be filler words, the smaller words in the back give us more insight to the dataset. For example, words that usually wouldn't be considered commonly used, such as "people", "feel", "thought", "good", and "bad", show that emotional feelings are regularly brought up in the tweets we're analyzing. We see that both negative and positive connotions are present, with seemingly more positive words than negative. However, because the word cloud simply serves as a visual representation, it's possible that there's more negative phrases that use unique wording instead. 
+
+

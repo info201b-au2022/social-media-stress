@@ -22,7 +22,6 @@ sd(dreaddit$Anxiety, na.rm = TRUE)
 
 quantile(dreaddit$Anxiety)
 
-
 mean(dreaddit$Positive.Emotion)
 mean(dreaddit$Positive.Emotion, na.rm = TRUE)
 
