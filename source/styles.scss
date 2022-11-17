@@ -6,6 +6,13 @@
 $main-padding-x: 2rem;
 $main-padding-y: 1.25rem;
 
+@mixin color-theme() {
+  color: #b1d4e0;
+  &:hover, &:focus {
+    color: #7272FF;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -31,19 +38,64 @@ nav {
   justify-content: flex-start;
   width: 100%;
   height: 5rem;
-  background-color: #0c2d48;
-  color: #b1d4e0;
   padding: $main-padding-y $main-padding-x;
-  .active {
-    color: #7272FF;
-    text-decoration: underline;
+  .container-fluid, .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 
-div {
-  padding: $main-padding-y $main-padding-x;
+.navbar {
+  margin-bottom: 0;
+  .open .dropdown-menu {
+    position: absolute;
+    background-color: #0c2d48;
+  }
+}
+
+.navbar-default {
+  background-color: #0c2d48;
+  border: none;
+  .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    @include color-theme()
+  }
+  .navbar-nav {
+    li {
+      a {
+        @include color-theme()
+      }
+    }
+  }
 }
 
 .tab-content {
-  display: flex;
+  .active {
+    display: flex;
+    overflow-wrap: break-word;
+    width: 100%;
+    div {
+      overflow: hidden;
+      width: 50%;
+      padding: $main-padding-y $main-padding-x;
+    }
+    div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  padding: $main-padding-y $main-padding-x;
+}
+
+.container-fluid {
+  padding: 0;
 }
