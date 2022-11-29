@@ -9,7 +9,7 @@
 | Date | Autumn Quarter 2022
 
 #### Abstract
-Our main goal with this research project is to find links and correlations between social media and stress. This question is important to us because social media's growing influence in modern society and our lives is coming to odds with a growing societal conciousness towards the value of stress balancing and mental health. To address this concern, we will do an analysis of a dataset containing over 700 Reddit posts gathered from various subreddits.
+Our main goal with this research project is to analyze trends and relations of the psychological effects of using social media, with a particular focus on stress, depression, and anxiety. This question is important to us because social media's growing influence in modern society and our lives is coming to odds with a growing societal conciousness towards the value of stress balancing and mental health. To address this concern, we will do analysis of datasets containing Reddit posts, Twitter tweets, and other social media posts.
 
 #### Keywords:
 - stress analysis
@@ -37,31 +37,50 @@ Within today's society there is access to a surplus of information on social med
 
 1. What impact does social media have on people’s levels of stress? Through this question, we aim to find and explain the link between social media and mental health by examining indicators of stress across online communities on social media apps like Reddit. Is social media a contributing stressor, or does it help alleviate stress by allowing others to meet people with similar experiences?
 2. Are people engaged in online communities geared towards sensitive topics more or less likely to experience elevated levels of stress? Many people join online communities like r/relationships or r/ptsd on Reddit to find others that have similar experiences and share their own personal experiences. Does exposure to these communities worsen stress?
-3. Which online communities have an increased risk for stress, and what do they have in common? Many of the subreddits we will examine consist of people struggling with homelessness, poverty, and various forms of trauma, or are otherwise struggling with a real-world situation. How can we tell whether the stress indicators recorded are affected by social media use?
+3. Which online communities have an increased risk for stress, and what do they have in common? Many of the subreddits and posts we will examine consist of people struggling with homelessness, poverty, and various forms of trauma, or are otherwise struggling with a real-world situation. How can we tell whether the stress indicators recorded are affected by social media use?
 
 #### The Dataset
 
 ##### About
-From the website kaggle, we found two datasets that directly correlate to the topic entitled "Stress Analysis in Social Media". Each file contains a 100+ quotes that come from a range of users found off of Reddit, and in one way or another, are deemed to show implications of stress shown in and through social media use. While file "dreaddit-test" has more recorded observations than "dreddit-train", they both provide information such as user id, subreddit name, sentence range, text, and confidence level, etc. Furthermore, there's an article by the study's authors - Dreaddit: A Reddit Dataset for Stress Analysis in Social Media (https://aclanthology.org/D19-6213.pdf) - that further explains the mechanisms behind how the study is conducted and how stress is being detected.
+
+###### Dataset 1: Dreaddit
+
+The first dataset is a [Kaggle dataset](https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media) derived from a report called [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://aclanthology.org/D19-6213/). This dataset aims to analyze Reddit posts in relation to stress. This is done through the use of a machine learning model that involves corpus analysis and the use of Amazon Mechanical Turk workers. We are using the test data which consists of 715 posts, while the train data is around 2500+ posts. We will be using the test data because that is more accurate and is built based off the model that was trained on the train data.
+
+###### Dataset 2: 11/10/2022 Twitter Sentiment Analysis
+
+The second dataset is one that Wesley made. Using the snscrape library in Python, we were able to pull the latest 3500 tweets from around 12:30 AM 11/10/2022. The intention of this dataset is to provide a more updated look to Tweet data since a lot of the existing sentiment analysis has been trained on data that is older and could represent both older events in history.
+
+###### Dataset 3: Emotion Classification NLP
+
+The third [dataset](https://www.kaggle.com/datasets/anjaneyatripathi/emotion-classification-nlp) consists of 3099 tweets that have been processed and put into four categories, these being fear, anger, sadness, and joy.
+
+###### Dataset 4: Cyberbullying Twitter
+
+The fourth [dataset](https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification) contains over 46,000 tweets, each of which fall into categories of cyberbullying on grounds of age, ethnicity, gender, religion, or other, and not cyberbullying.
+
+###### Dataset 5: Various Social Media Anxiety and Depression
+
+The fifth [dataset](https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset) has 6500 entries that comprise various posts from social media platforms. These include Facebook posts and from initial inspection, does not seem to include any tweets.
 
 ##### Table
-| | Data Files|
-|---------------| --------------
-|Name | We will have two datasets: dreaddit-test.csv, dreaddit-train.csv
-| Purpose | These datasets contain lengthy multi-domain social media data for identifying stress from five different categories of Reddit communities.
-| Number of Observations | dreaddit-test has 716 rows. dreaddit-train has 2839 rows.
-| Number of Rows | Each dataset has 116 rows
-| Citation | Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021
-| URL | Both data files can be found at https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv
+
+| Data Files |  # of Observations | Citation | Url |
+|---------------| -------------- | -------------- | --------------
+| Dreaddit |  715 posts | Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021 | https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media
+| Twitter Sentiment | 3500 tweets | We made this | We made this
+| Emotions NLP | 3099 tweets | Tripathi, Anjaneya. “Emotion Classification NLP.” Kaggle, 11 May 2021, https://www.kaggle.com/datasets/anjaneyatripathi/emotion-classification-nlp.  | https://www.kaggle.com/datasets/anjaneyatripathi/emotion-classification-nlp
+| Cyberbullying | Over 46000 tweets | Larxel. “Cyberbullying Classification.” Kaggle, 17 Jan. 2022, https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification.  | https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification
+| Student anxiety and depression | 6500 entries | Saha, Sourav. “Students Anxiety and Depression Dataset.” Kaggle, 12 Nov. 2022, https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset. | https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset
 
 ##### Answering Our Research Questions
 Based on the data provided, it can help us form possible conclusions to our research questions. If we analyze the amount of times that terms such as "social media" or "instagram" appear, we can see the frequency at which online platforms negatively affect the mental wellbeing of the individuals in our data pool. Moreover, if we were able to carefully look through each grouped subreddit, it's possible for us to recognize which online communities experience more or less stress. For example, quotes obtained from subreddit "ptsd" might contain more heavy stress indicators than quotes obtained from subreddit "assistance", or vice versa. Hopefully, this will allow us to find common factors that routinely appear to affect mental health, and see how the presence of social media further multiplies that effect.
 
 ##### Provenance
-- Data collection: The datasets, titled "Stress Analysis in Social Media" were uploaded on Kaggle by Ruchi Bhata. However it was Elsbeth Turcan and  Kathleen McKeown who first collected the data in 2019. They collected the data with the purpose of recognizing how stress, as a univeral factor experienced by mostly everyone, exists specifically on online platforms.
-- Funding: The research was funded by a Presidential Fellowship from the Fu Foundation School of Engineering and Applied Science at Columbia University. Financially speaking, those most likely to benefit from this study would be mental health professionals such as psychiatrists, psychologists, or counselors. They would be more equipped on how to deal with stress stemming from social media, and would be able to better treat  patients that are struggling with a similar issue.
-- Validation: Each subset of the data was annotated by at least 5 works using Amazon Mechanical Turk in order to figure out the characteristics of stress. Additionally, each data point how to pass a "check" question randomly selected out of 50. There were also anonymous reviewers that would collectively agree on whether or not a quote accurately demonstrated that high stress levels were present. The percent that agreed was then also recorded in the data. After the multiple peer reviews and checkpoints, I would consider the data to be reliable and trustworthy. Because the data pool isn't small as well, the sample size is large enough so that other confounding variables wouldn't affect the outcome too much.
-- Obtainment: Our group obtained the data off of the website kaggle. We wanted to do something related to mental health, and the topic of social media's role in stress immediately appealed to us. We credit both the authors and contributors of this dataset.
+- Data collection: The datasets, titled "Stress Analysis in Social Media" were uploaded on Kaggle by Ruchi Bhata. However it was Elsbeth Turcan and  Kathleen McKeown who first collected the data in 2019. They collected the data with the purpose of recognizing how stress, as a univeral factor experienced by mostly everyone, exists specifically on online platforms. The other sources collected their data from Twitter and other social media platforms with a similar purpose.
+- Funding: The Dreaddit dataset  was funded by a Presidential Fellowship from the Fu Foundation School of Engineering and Applied Science at Columbia University. Financially speaking, those most likely to benefit from this study would be mental health professionals such as psychiatrists, psychologists, or counselors. They would be more equipped on how to deal with stress stemming from social media, and would be able to better treat  patients that are struggling with a similar issue.
+- Validation: Each subset of the Dreaddit data was annotated by at least 5 works using Amazon Mechanical Turk in order to figure out the characteristics of stress. Additionally, each data point how to pass a "check" question randomly selected out of 50. There were also anonymous reviewers that would collectively agree on whether or not a quote accurately demonstrated that high stress levels were present. The percent that agreed was then also recorded in the data. After the multiple peer reviews and checkpoints, I would consider the data to be reliable and trustworthy. Because the data pool isn't small as well, the sample size is large enough so that other confounding variables wouldn't affect the outcome too much.
+- Obtainment: Our group obtained the data off of the website kaggle. We wanted to do something related to mental health, and the topic of social media's role in stress immediately appealed to us. We credit both the authors and contributors of all the datasets that we used.
 
 #### Expected Implications
 
@@ -72,10 +91,15 @@ Assuming that this ends up being the case, the primary implication for policymak
 We hope the results from this research can be used to better guide and improve the experience people get on social media.
 
 #### Limitations
-When working with social media datasets, one main limitation we have to consider is that social media platforms are often filled with duplicate, fake profiles. There’s essentially no limit to the number of accounts a person can have, provided that they have a different form of contact to set up the account. Moreover, because the dataset we have is essentially from various Reddit threads, the methods used to identify stress are limited to key words and subreddits titled as “anxiety”, “ptsd”, “assistance,” etc. There may be greater amounts of stress shown from other categories of Reddit communities, yet, our dataset is limited to a certain extent. It’s also sometimes in a person’s self-interest to exaggerate when they’re using social media as a venting mechanism, which can cause the algorithm to detect more stress than the person actually has. Lastly, it’s important to note that the data we obtained comes only from Reddit, and our conclusions from this can’t be directly generalized to other social media sites as well.
+When working with social media datasets, one main limitation we have to consider is that social media platforms are often filled with duplicate, fake profiles. There’s essentially no limit to the number of accounts a person can have, provided that they have a different form of contact to set up the account. Moreover, because the dataset we have is essentially from various Reddit threads, the methods used to identify stress are limited to key words and subreddits titled as “anxiety”, “ptsd”, “assistance,” etc. There may be greater amounts of stress shown from other categories of Reddit communities, yet, our dataset is limited to a certain extent. It’s also sometimes in a person’s self-interest to exaggerate when they’re using social media as a venting mechanism, which can cause the algorithm to detect more stress than the person actually has.
+
+A limitation that we have associated with our topic in general is that the data we are able to draw from is not naturally occuring or quantifiable with numbers. All the data we draw has to go through natural language processing or human analysis of words and thus can be subjective or dependent on the method that was used to train a machine learning model. This means that it is inherently more difficult for us to apply the results of the datasets we choose and also limits the amount of datasets that are useful to us as opposed to a topic like greenhouse gas emissions from cars.
 
 #### References
 1. Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021, https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv.
-2. “How Different Generations Use Social Media-and What This Means for Your Business.” Sprout Social, 22 July 2021, https://sproutsocial.com/insights/guides/social-media-use-by-generation/. 
-3. Marantz, Andrew. “Reddit and the Struggle to Detoxify the Internet.” The New Yorker, 12 Mar. 2018, https://www.newyorker.com/magazine/2018/03/19/reddit-and-the-struggle-to-detoxify-the-internet. 
-4. Watson, Amy. “News Consumption on Social Media U.S. by Generation 2022.” Statista, 18 Aug. 2022, https://www.statista.com/statistics/1124159/us-generational-social-media-news/. 
+2. “How Different Generations Use Social Media-and What This Means for Your Business.” Sprout Social, 22 July 2021, https://sproutsocial.com/insights/guides/social-media-use-by-generation/.
+3. Marantz, Andrew. “Reddit and the Struggle to Detoxify the Internet.” The New Yorker, 12 Mar. 2018, https://www.newyorker.com/magazine/2018/03/19/reddit-and-the-struggle-to-detoxify-the-internet.
+4. Watson, Amy. “News Consumption on Social Media U.S. by Generation 2022.” Statista, 18 Aug. 2022, https://www.statista.com/statistics/1124159/us-generational-social-media-news/.
+5. J. Wang, K. Fu, C.T. Lu, “SOSNet: A Graph Convolutional Network Approach to Fine-Grained Cyberbullying Detection,” Proceedings of the 2020 IEEE International Conference on Big Data (IEEE BigData 2020), December 10-13, 2020.
+6. WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-Marquez. In Proceedings of the EMNLP 2017 Workshop on Computational Approaches to Subjectivity, Sentiment, and Social Media (WASSA), September 2017, Copenhagen, Denmark.
+7. Saha, Sourav. “Students Anxiety and Depression Dataset.” Kaggle, 12 Nov. 2022, https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset.
