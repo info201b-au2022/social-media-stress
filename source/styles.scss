@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 // Intro and report page should be split 50% div text content and some images on
 // side. Looks better than text going across the entire page
@@ -29,7 +29,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', Arial, sans-serif;
 }
 
 nav {
@@ -74,6 +74,9 @@ nav {
 }
 
 .tab-content {
+  p {
+    line-height: 1.675;
+  }
   .active {
     display: flex;
     overflow-wrap: break-word;
