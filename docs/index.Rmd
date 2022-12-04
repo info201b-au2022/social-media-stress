@@ -9,14 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library("knitr")
 library("dplyr")
-
+source("../source/summary_table.R")
 ```
 ## Stress Detection and Analysis in Popular Social Media Platforms
 
 
 ```{r, echo = FALSE}
-library("knitr")
-source("~/Documents/info201/Project/Project-11-BC/source/summary_table.R")
 most_stressed_percent <- max(emotions_by_subreddit$`Stressed Percentage`)
 most_stressed_subreddit <- emotions_by_subreddit[emotions_by_subreddit$`Stressed Percentage` == most_stressed_percent, 1]
 least_stressed_percent <- min(emotions_by_subreddit$`Stressed Percentage`)
@@ -33,12 +31,15 @@ From the Dreaddit dataset alone, it seems that the majority of the Reddit posts 
 
 
 ### Summary Table
+#### Table 1: Emotions Found in Dreddit Dataset
 ```{r, echo = FALSE}
-source("../source/summary_table.R")
-kable(emotions_by_stress, caption="Emotions Found in Dreddit Dataset", digits=2)
-kable(emotions_by_subreddit, caption="Stress Found in Subreddits", digits=2)
+emotions_by_stress
 ```
-In this portion, I included two tables that summarize the Reddit dataset nicely. The first table contains the summary information of all the emotions detected in both "stressed" and "not stressed" posts. Posts that are deemed as stressed often have a higher value in emotions pertaining to anxiety, anger, sadness, and negativity. The second table contains the summary information of the percentage of stress detected among the posts in separate, individual subreddits. The higher the tone, the more positive and less stressful it is. Subreddits such as "stress" and "domesticviolence" are shown to contain the highest amounts of stress and negativity. 
+#### Table 2: Stress Found in Subreddits
+```{r, echo = FALSE}
+emotions_by_subreddit
+```
+In this portion, I included two tables that summarize the Reddit dataset nicely. The first table contains the summary information of all the emotions detected in both "stressed" and "not stressed" posts. Posts that are deemed as stressed often have a higher value in emotions pertaining to anxiety, anger, sadness, and negativity. The average sentiment for the "not stressed" category is 0.11, and it's -0.014 for the "stressed" category. More negative numbers correlate to higher stress, while more positive numbers indicate that there's less stress. The second table contains the summary information of the percentage of stress detected among the posts in separate, individual subreddits. The higher the tone, the more positive and less stressful it is. Subreddits such as "stress" and "domesticviolence" are shown to contain the highest amounts of stress and negativity. 
 
 ### Plots
 
@@ -67,6 +68,6 @@ For our second graph, we have a full summary of the reddit dreaddit data. Quanti
 source("../source/chart3.R")
 chart3
 ```
-This word cloud shows the top 100 words that consistently appears in the "Twitter Sentiment Dataset". The more that a specific word appears or is used by someone, the bigger and bolder it appears in the chart. Upon first glance, we see that words such as "will" and "like" appear to be the largest and most used. Because those words are what we consider to be filler words, the smaller words in the back give us more insight to the dataset. For example, words that usually wouldn't be considered commonly used, such as "people", "feel", "thought", "good", and "bad", show that emotional feelings are regularly brought up in the tweets we're analyzing. We see that both negative and positive connotions are present, with seemingly more positive words than negative. However, because the word cloud simply serves as a visual representation, it's possible that there's more negative phrases that use unique wording instead. 
+This word cloud shows the top 100 words that consistently appears in the "Twitter Sentiment Dataset". The more that a specific word appears or is used by someone, the bigger and bolder it appears in the chart. At first glance, we see that the largest words are "like", "good", and "don't". Moreover, words that usually wouldn't be considered commonly used, such as "love", "happy", "stop", "want", and "hope", show that emotional feelings are regularly brought up in the tweets we're analyzing. We see that both negative and positive connotions are present, with seemingly more positive words than negative. However, because the word cloud simply serves as a visual representation, it's possible that there's more negative phrases that use unique wording instead. 
 
 
