@@ -1,34 +1,27 @@
-# summary_info.R
-# A source file that takes in a dataset and returns a list of info about it:
 library("dplyr")
 library("tidyr")
 library("ggplot2")
 
-#load csv data
-dreaddit <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Dreaddit-Dataset.csv", stringsAsFactors = TRUE)
+social_media <- read.csv("https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/data/General%20Social%20Media.csv", stringsAsFactors = TRUE)
 
-summary(dreaddit)
-summary(dreaddit$Stress)
+to_plot <- pivot_longer(social_media, cols = starts_with("Growth"), names_to = "Growth", values_to = "Percentage")
 
-summary_info <- list(dreaddit)
-summary_info$num_observations <- nrow(dreaddit)
+chart2 <- ggplot(to_plot, aes(fill = Growth, y = Name, x = Percentage)) +
+  geom_bar(position="dodge", stat="identity") +
+  labs(title = "Growth of Social Media Platforms in 2020 vs 2021")
 
-mean(dreaddit$Anxiety)
-mean(dreaddit$Anxiety, na.rm = TRUE)
+data <- social_media %>%
+  arrange(desc(Name)) %>%
+  mutate(MAU = Monthly.Active.Users / sum(social_media$Monthly.Active.Users) *100) %>%
+  mutate(ypos = cumsum(MAU)- 0.5*MAU )
 
-median(dreaddit$Anxiety, na.rm = TRUE)
-
-sd(dreaddit$Anxiety, na.rm = TRUE)
-
-quantile(dreaddit$Anxiety)
-
-mean(dreaddit$Positive.Emotion)
-mean(dreaddit$Positive.Emotion, na.rm = TRUE)
-
-median(dreaddit$Positive.Emotion)
-median(dreaddit$Positive.Emotion, na.rm = TRUE)
-
-sd(dreaddit$Positive.Emotion, na.rm = TRUE)
-
-quantile(dreaddit$Positive.Emotion)
-
+pie <- ggplot(data, aes(x="", y = MAU, fill = Name)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0) +
+  labs(
+    title = "Monthly Active Users of Each Social Media App, in Billions"
+  ) +
+  theme_void() +
+  geom_text(aes(y = ypos, label = Monthly.Active.Users), color = "black", size=6) +
+  scale_fill_brewer(palette="Set1") +
+  theme(plot.title = element_text(hjust = 0.5))
