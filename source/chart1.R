@@ -21,10 +21,13 @@ dreaddit_data$Subreddit[dreaddit_data$Subreddit == "assistance"] <- "Assistance"
 dreaddit_data$Subreddit[dreaddit_data$Subreddit == "anxiety"] <- "Anxiety"
 dreaddit_data$Subreddit[dreaddit_data$Subreddit == "almosthomeless"] <- "Almost Homeless"
 
+yticks <- c("More negative", "Neutral", "More positive")
 #create scatterplot
 chart1 <- ggplot(data = dreaddit_data) +
   geom_col(mapping = aes(x = Subreddit, y = Tone)) +
   coord_flip() +
-  labs(title = "Average Tone by Subreddit")
-
+  labs(title = "Average Tone by Subreddit") +
+  scale_y_continuous(breaks = c(20, 50, 80),
+                     label = yticks,
+                     limits = c(0, 100))
 chart1

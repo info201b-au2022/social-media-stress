@@ -16,7 +16,8 @@ docs <- twt_doc %>%
   tm_map(stripWhitespace)
 docs <- tm_map(docs, content_transformer(tolower))
 docs <- tm_map(docs, removeWords, stopwords("english"))
-docs <- tm_map(docs, removeWords, c("will", "people", "stokes", "thinkwell", "ay", "yes", "indvseng", "pandya", "'m", "[][]", "'s", "said", "one", "just", "thats", "twitter", "ive", "hardik", "上海", "'re"))
+docs <- tm_map(docs, removeWords, c("will", "people", "stokes", "thinkwell", "ay", "yes", "indvseng", "pandya", "[][]'m", "[][]", "[][]'s",
+                                    "said", "one", "just", "thats", "twitter", "ive", "hardik", "上海", "'re", "amp", "lol", "youre", "cant", "yeah", "get", "[][]'ve", "推特刷粉", "推特粉丝", "上海线下"))
 
 gsub("https\\S*", "", docs) 
 gsub("@\\S*", "", docs) 
@@ -33,8 +34,7 @@ df <- data.frame(word = names(words), freq = words)
 
  
 chart3 <- wordcloud(words = df$word, freq = df$freq, min.freq = 1,
-                    max.words = 100, random.order = FALSE, rot.per = 0.35,
-                    colors = brewer.pal(8, "Dark2"))
+                    max.words = 100, random.order = FALSE, rot.per = 0.35, color = "slategrey")
+                    
 chart3
-
 
