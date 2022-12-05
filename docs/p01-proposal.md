@@ -35,9 +35,9 @@ Within today's society there is access to a surplus of information on social med
 
 #### Research Questions
 
-1. What impact does social media have on people’s levels of stress? Through this question, we aim to find and explain the link between social media and mental health by examining indicators of stress across online communities on social media apps like Reddit. Is social media a contributing stressor, or does it help alleviate stress by allowing others to meet people with similar experiences?
-2. Are people engaged in online communities geared towards sensitive topics more or less likely to experience elevated levels of stress? Many people join online communities like r/relationships or r/ptsd on Reddit to find others that have similar experiences and share their own personal experiences. Does exposure to these communities worsen stress?
-3. Which online communities have an increased risk for stress, and what do they have in common? Many of the subreddits and posts we will examine consist of people struggling with homelessness, poverty, and various forms of trauma, or are otherwise struggling with a real-world situation. How can we tell whether the stress indicators recorded are affected by social media use?
+1. What impact does social media have on people’s levels of stress? Through this question, we aim to find and explain the link between social media and mental health by examining indicators of stress across online communities on social media apps like Reddit. We examine whether social media is a contributing stressor of if it helps alleviate stress by allowing others to meet people with similar experiences.
+2. Are people engaged in online communities geared towards sensitive topics more or less likely to experience elevated levels of stress? Many people join online communities like r/relationships or r/ptsd on Reddit to find others that have similar experiences and share their own personal experiences. Understanding whether these communities have a positive or negative effect on mental health is important because many people approach these communities for the purpose of venting or being comforted.
+3. Which online platforms have an increased risk for stress? Examining the demographics of different social media platforms and indicators of emotional state across these platforms can help us understand what factors contribute to mental health on social media.
 
 #### The Dataset
 
@@ -95,6 +95,8 @@ When working with social media datasets, one main limitation we have to consider
 
 A limitation that we have associated with our topic in general is that the data we are able to draw from is not naturally occuring or quantifiable with numbers. All the data we draw has to go through natural language processing or human analysis of words and thus can be subjective or dependent on the method that was used to train a machine learning model. This means that it is inherently more difficult for us to apply the results of the datasets we choose and also limits the amount of datasets that are useful to us as opposed to a topic like greenhouse gas emissions from cars.
 
+#### Acknowledgements
+
 #### References
 1. Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021, https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv.
 2. “How Different Generations Use Social Media-and What This Means for Your Business.” Sprout Social, 22 July 2021, https://sproutsocial.com/insights/guides/social-media-use-by-generation/.
@@ -103,3 +105,5 @@ A limitation that we have associated with our topic in general is that the data 
 5. J. Wang, K. Fu, C.T. Lu, “SOSNet: A Graph Convolutional Network Approach to Fine-Grained Cyberbullying Detection,” Proceedings of the 2020 IEEE International Conference on Big Data (IEEE BigData 2020), December 10-13, 2020.
 6. WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-Marquez. In Proceedings of the EMNLP 2017 Workshop on Computational Approaches to Subjectivity, Sentiment, and Social Media (WASSA), September 2017, Copenhagen, Denmark.
 7. Saha, Sourav. “Students Anxiety and Depression Dataset.” Kaggle, 12 Nov. 2022, https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset.
+
+#### Appendix A: Questions

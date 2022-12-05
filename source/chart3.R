@@ -17,7 +17,8 @@ docs <- twt_doc %>%
 docs <- tm_map(docs, content_transformer(tolower))
 docs <- tm_map(docs, removeWords, stopwords("english"))
 docs <- tm_map(docs, removeWords, c("will", "people", "stokes", "thinkwell", "ay", "yes", "indvseng", "pandya", "[][]'m", "[][]", "[][]'s",
-                                    "said", "one", "just", "thats", "twitter", "ive", "hardik", "上海", "'re", "amp", "lol", "youre", "cant", "yeah", "get", "[][]'ve", "推特刷粉", "推特粉丝", "上海线下"))
+                                    "said", "one", "just", "thats", "twitter", "ive", "hardik", "上海", "'re", "amp", "lol", "youre", "cant",
+                                    "yeah", "get", "[][]'ve", "推特刷粉", "推特粉丝", "上海线下", "ben", "’s", "tworldcup", "深圳"))
 
 gsub("https\\S*", "", docs) 
 gsub("@\\S*", "", docs) 
@@ -31,6 +32,10 @@ dtm <- TermDocumentMatrix(docs)
 matrix <- as.matrix(dtm)
 words <- sort(rowSums(matrix), decreasing = TRUE)
 df <- data.frame(word = names(words), freq = words)
+
+df$freq[df$freq == 118] <- 0
+df$freq[df$freq == 50] <- 0
+df$freq[df$freq == 32] <- 0
 
  
 chart3 <- wordcloud(words = df$word, freq = df$freq, min.freq = 1,
