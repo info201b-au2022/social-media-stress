@@ -77,15 +77,21 @@ nav {
   p {
     line-height: 1.675;
   }
+  [data-value="Introduction"] div {
+    overflow: hidden;
+    width: 50%;
+    @media (orientation: portrait) {
+      width: 100%;
+    }
+    padding: $main-padding-y $main-padding-x;
+  }
   .active {
     display: flex;
+    @media (orientation: portrait) {
+      display: block;
+    }
     overflow-wrap: break-word;
     width: 100%;
-    div {
-      overflow: hidden;
-      width: 50%;
-      padding: $main-padding-y $main-padding-x;
-    }
     div:nth-child(2) {
       display: flex;
       align-items: center;
