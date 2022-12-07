@@ -1,6 +1,3 @@
-library(shiny)
-library(plotly)
-
 x_input <- selectInput(
   "sentiment",
   label = "Choose a variable to graph on:",
