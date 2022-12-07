@@ -1,6 +1,7 @@
 library(shiny)
 library(plotly)
 library(dplyr)
+library(tidyverse)
 
 survey_csv <- read.csv("https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/data/impact_survey.csv", stringsAsFactors = FALSE)
 
