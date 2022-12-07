@@ -1,22 +1,15 @@
-library("plotly")
-library("tidyr")
-library("dplyr")
-library("stringr")
-library("wordcloud")
-library("tm")
-library("tidytext")
-library("ggplot2")
-
 server <- function(input, output) {
   output$general_chart <- renderPlotly({
     print(input$xvar)
     to_plot <- pivot_longer(social_media, cols = input$xvar, names_to = "Selected", values_to = "Percentage")
     chart2 <- ggplot(to_plot, aes(fill = Name, y = Name, x = Percentage)) +
       geom_bar(position = "dodge", stat = "identity") +
-      labs(title = "Social Media Platforms",
-          x = input$xvar,
-          y = 'Platforms') +
-      theme(legend.position="none")
+      labs(
+        title = "Social Media Platforms",
+        x = input$xvar,
+        y = "Platforms"
+      ) +
+      theme(legend.position = "none")
 
     p <- ggplotly(chart2)
 
@@ -24,7 +17,6 @@ server <- function(input, output) {
   })
 
   output$survey_chart <- renderPlotly({
-
     survey_plot <- survey_csv %>%
       select(Global.impact.of.social.media.on.daily.life.2019, Increased, Decreased, Had.no.impact) %>%
       gather(key = Impact, value = Percentage, -Global.impact.of.social.media.on.daily.life.2019)
@@ -32,22 +24,22 @@ server <- function(input, output) {
     chart1 <- ggplot(data = survey_plot) +
       geom_col(mapping = aes(x = Percentage, y = Global.impact.of.social.media.on.daily.life.2019, fill = Impact)) +
       scale_fill_brewer(labels = c("Decreased", "Had no impact", "Increased"), palette = "Set3") +
-      labs(title = "Global Impact of Social Media on Daily Life (2019)",
-           y = "Daily Life",
-           x = "Percentage (%)",
-           caption = "Measure of social media impact on daily life of individuals ages 16-64 worldwide as of February 2019.")
+      labs(
+        title = "Global Impact of Social Media on Daily Life (2019)",
+        y = "Daily Life",
+        x = "Percentage (%)",
+        caption = "Measure of social media impact on daily life of individuals ages 16-64 worldwide as of February 2019."
+      )
 
     p2 <- ggplotly(chart1)
 
     return(p2)
   })
 
-  output$wordcloud <- renderPlotly({
-    print(input$sentiment)
+  output$wordcloud <- renderPlot({
     twt_sentiment <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Twitter-Sentiment-Dataset.csv", stringsAsFactors = FALSE)
     twt_text <- twt_sentiment %>% filter(Cardiff.Sentiment == input$sentiment)
     twt <- twt_text$Cleaned.Tweets
-    print(twt)
     # convert to corpus
     twt_doc <- Corpus(VectorSource(twt))
 
@@ -77,16 +69,9 @@ server <- function(input, output) {
     df$freq[df$freq == 118] <- 0
     df$freq[df$freq == 50] <- 0
     df$freq[df$freq == 32] <- 0
-
-    print(df)
-    chart3 <- wordcloud(
-      words = df$word, freq = df$freq, min.freq = 1,
-      max.words = 100, random.order = FALSE, rot.per = 0.35, color = "slategrey"
-    )
-
-    View(chart3)
+    chart3 <- wordcloud(words = df$word, freq = df$freq, min.freq = 1,
+            max.words = 50, random.order = FALSE, rot.per = 0.35, color = "slategrey")
 
     return(chart3)
   })
 }
-
