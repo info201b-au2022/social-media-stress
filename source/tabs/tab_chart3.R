@@ -1,4 +1,7 @@
 dreaddit <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Dreaddit-Dataset.csv", stringsAsFactors = FALSE)
+
+source("server/tab_chart3.R")
+
 stress_status <- unique(dreaddit$Stress)
 
 stress_input <- selectInput (
@@ -20,6 +23,9 @@ interactive3 <- tabPanel(
   tags$section (
     stress_input,
     variable_input,
+    plotlyOutput("plot3"),
+    br(),
+    
     p(HTML("&emsp;"), "This chart analyzes three variables from the Dreaddit dataset
       : Tone, Positive Emotion, and Negative Emotion. The Reddit datasets are also
       grouped into two groups based on calculated stress status: Stressed and not
@@ -31,5 +37,4 @@ interactive3 <- tabPanel(
       subreddits that have a positve emotion value of 5, contain more positivity
       in the posts than subreddits with a positve emotion value less than 5.)"),
   ),
-  plotlyOutput("plot3,")
 )

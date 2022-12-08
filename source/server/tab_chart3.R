@@ -5,6 +5,16 @@ dreaddit_data <- dreaddit
 colnames(dreaddit_data) <- gsub(" ", ".", colnames(dreaddit_data))
 dreaddit_data
 
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "survivorsofabuse"] <- "Survivors of Abuse"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "stress"] <- "Stress"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "relationships"] <- "Relationships"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "ptsd"] <- "PTSD"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "homeless"] <- "Homeless"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "food_pantry"] <- "Food Pantry"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "domesticviolence"] <- "Domestic Violence"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "assistance"] <- "Assistance"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "anxiety"] <- "Anxiety"
+dreaddit_data$Subreddit[dreaddit_data$Subreddit == "almosthomeless"] <- "Almost Homeless"
 
 get_stress_analysis <- function(input_stress, input_variable) {
   if(input_variable == "Tone") {
