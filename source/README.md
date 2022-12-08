@@ -1,18 +1,17 @@
 # The `/source` Directory
 
 All of our project code is found in this directory.  We further organize our code into 
-these sub-directories (TODO: Update/Delete)
+these sub-directories 
 
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
-|[xxx](./xxx) | Description ... 
+|[app.R](./app.R) | This creates our shiny app and sources code from [ui.R](./ui.R) and [server.R](./server.R)
+|[chart1.R](./chart1.R) | This is our first chart, which is a data visualization of data from our [Dreaddit Dataset](data/Dreaddit-Dataset.csv). 
+|[chart2.R](./chart2.R) | This is our second chart and renders a bar chart and pie chart from our [General Social Media Dataset](add path). 
+|[chart3.R](/chart3.R) | This is our third chart, which is a data visualization from  our [Tweet Sentiment Analysis Dataset](data/Twitter-Sentiment_Analysis.csv). 
+|[server.R](./server.R) | This file contains our server code for our shiny app. 
+|[styles.css](./styles.css) | This file contains the css code for our shiny app. 
+|[summary_table.R](./summary_table.R) | This file renders a summary table generated from data from our datasets. 
+|[ui.R](./ui.R) | This file contains our ui code for our shiny app.
+|[tabs](./xxx) | Add tab subdirectory? 
 
-
-# DEVELOPER NOTE 1: About ... 
-* All source code for your projects should go in the `/source` directory
-* To organize your code, you might decide to create sub-directories
-* If you use sub-directories, plese briefly describe them in the table above
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
-aim for clarity and conciseness.
-* When done, be sure to delete this NOTE sections (which are intended for you, of course, not your audience!)
