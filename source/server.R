@@ -24,16 +24,17 @@ server <- function(input, output) {
   })
 
   output$survey_chart <- renderPlotly({
-
+    
     survey_plot <- survey_csv %>%
       select(Global.impact.of.social.media.on.daily.life.2019, Increased, Decreased, Had.no.impact) %>%
       gather(key = Impact, value = Percentage, -Global.impact.of.social.media.on.daily.life.2019)
-
-    chart1 <- ggplot(data = survey_plot) +
-      geom_col(mapping = aes(x = Percentage, y = Global.impact.of.social.media.on.daily.life.2019, fill = Impact)) +
+    print(input$x_var)
+    chart1 <- ggplot(data = survey_plot %>%
+                       filter(Global.impact.of.social.media.on.daily.life.2019 == input$x_var)) +
+      geom_col(mapping = aes(x = Percentage, y = input$x_var, fill = Impact)) +
       scale_fill_brewer(labels = c("Decreased", "Had no impact", "Increased"), palette = "Set3") +
       labs(title = "Global Impact of Social Media on Daily Life (2019)",
-           y = "Daily Life",
+           y = "Aspects of Daily Life",
            x = "Percentage (%)",
            caption = "Measure of social media impact on daily life of individuals ages 16-64 worldwide as of February 2019.")
 
