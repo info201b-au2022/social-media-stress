@@ -28,9 +28,9 @@ chart3_sidebar_content <- sidebarPanel(
   selectInput(
     inputId = "input_variable",
     label = "Select Variable to be Analyzed Quantitatively: ",
-    choices = c("Tone" = "Tone",
-                "Positive Emotion" = "Positive.Emotion",
-                "Negative Emotion" = "Negative.Emotion"))
+    choices = c("Tone",
+                "Positive Emotion",
+                "Negative Emotion" ))
 )
 chart3_main_content <- mainPanel(
   plotlyOutput("plot3")
