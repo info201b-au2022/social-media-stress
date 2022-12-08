@@ -83,17 +83,12 @@ nav {
     @media (orientation: portrait) {
       width: 100%;
     }
-    .active {
-      div:nth-child(2) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
     padding: $main-padding-y $main-padding-x;
   }
   .active {
     display: flex;
+    align-items: center;
+    justify-content: center;
     @media (orientation: portrait) {
       display: block;
     }
