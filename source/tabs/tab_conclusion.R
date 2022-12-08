@@ -1,5 +1,26 @@
 conclusion <- tabPanel(
   "Conclusion",
+    tags$div(
+      tags$div(
+        h3("Research Questions"),
+        tags$ul(
+          tags$li("Are people engaged in online communities geared towards sensitive topics more or less likely to experience elevated levels of stress? "),
+          p("Many people join online communities like r/relationships or r/ptsd on Reddit to find others that have
+          similar experiences and share their own personal experiences. Understanding whether these communities have
+          a positive or negative effect on mental health is important because many people approach these communities
+          for the purpose of venting or being comforted."),
+          tags$li("What factors might contribute to stress experienced as a result of social media?"),
+          p("Answering this question can help us understand what emotions related to social media might be influenced by.
+          This is important because understanding where a problem is sourced from is critical in moving toward mitigating
+          its effects."),
+          tags$li("What impact does social media have on people’s levels of stress?"),
+          p("Through this question, we aim to find and explain the link between social media and mental health by
+          examining indicators of stress across online communities on social media apps like Reddit. We examine
+          whether social media is a contributing stressor of if it helps alleviate stress by allowing others to meet
+          people with similar experiences.")
+        ),
+      ),
+    ),
   tags$section(
     tags$div(
       tags$div(
