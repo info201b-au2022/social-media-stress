@@ -109,8 +109,9 @@ nav {
       max-height: 100%;
     }
   }
-  [data-value="Takeaway"] section > div {
+  [data-value="Takeaway"] section > div, [data-value="Conclusion"] section > div{
     display: flex;
+    margin-bottom: 4rem;
     img {
       padding: 1rem;
       max-width: auto;
