@@ -1,3 +1,7 @@
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+
 dreaddit <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Dreaddit-Dataset.csv", stringsAsFactors = FALSE)
 stress_status <- unique(dreaddit$Stress)
 
