@@ -78,8 +78,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  h3 {
+  h3, ul, ol {
     padding: 1rem;
+  }
+  li {
+    padding: 0.5rem;
   }
   p, li, h3 {
     line-height: 1.675;
@@ -106,6 +109,22 @@ nav {
       max-height: 100%;
     }
   }
+  [data-value="Takeaway"] section > div {
+    display: flex;
+    img {
+      padding: 1rem;
+      max-width: auto;
+      max-height: 350px;
+    }
+    @media (orientation: portrait) {
+      display: block;
+      img {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
+    }
+  }
   padding: $main-padding-y $main-padding-x;
 }
 
@@ -119,4 +138,8 @@ section {
 
 #survey_chart {
     min-width: 65%;
+}
+
+#plot3 {
+  min-width: 65%;
 }
