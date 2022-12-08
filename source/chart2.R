@@ -2,7 +2,7 @@ library("dplyr")
 library("tidyr")
 library("ggplot2")
 
-social_media <- read.csv("https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/data/General%20Social%20Media.csv", stringsAsFactors = TRUE)
+social_media <- read.csv("https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/data/General-Social-Media.csv", stringsAsFactors = TRUE)
 
 to_plot <- pivot_longer(social_media, cols = starts_with("Growth"), names_to = "Growth", values_to = "Percentage")
 

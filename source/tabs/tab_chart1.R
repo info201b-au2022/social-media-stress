@@ -1,4 +1,4 @@
-social_media <- read.csv("https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/data/General%20Social%20Media.csv", stringsAsFactors = TRUE, check.names = FALSE)
+social_media <- read.csv("https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/data/General-Social-Media.csv", stringsAsFactors = TRUE, check.names = FALSE)
 
 x_input <- selectInput(
   "xvar",
