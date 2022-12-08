@@ -1,5 +1,109 @@
 conclusion <- tabPanel(
   "Conclusion",
+  tags$section(
+        tags$table(
+          tags$tr(
+            tags$th(""),
+            tags$th("Brief Description"),
+          ),
+          tags$tr(
+            tags$td("Authors"),
+            tags$td("Jennifer Oh, Katie Stevens, Lydia Lan, Wesley Nguyen"),
+          ),
+          tags$tr(
+            tags$td("Affiliation"),
+            tags$td("INFO-201: Technical Foundations of Informatics - The iSchool - University of Washington"),
+          ),
+          tags$tr(
+            tags$td("Date"),
+            tags$td("Autumn 2022"),
+          ),
+        ),
+    tags$div(
+      tags$div(
+        h3("Abstract"),
+        p(HTML("&emsp;"), "Our main goal with this research project is to analyze trends and relations
+        of the psychological effects of using social media, with a particular focus on stress, depression,
+        and anxiety. This question is important to us because social media's growing influence in modern society
+        and our lives is coming to odds with a growing societal conciousness towards the value of stress
+        balancing and mental health. To address this concern, we will do analysis of datasets containing Reddit
+        posts, Twitter tweets, and survey responses.")
+      ),
+      img(
+        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+      )
+    ),
+    tags$div(
+      tags$div(
+        h3("Keywords"),
+        tags$ul(
+          tags$li("stress analysis"),
+          tags$li("social media"),
+          tags$li("reddit data analysis"),
+          tags$li("social media trends")
+        ),
+      ),
+    ),
+    tags$div(
+      tags$div(
+        h3("Introduction"),
+        p(HTML("&emsp;"), "Within today's society there is access to a surplus of information on social media,
+        and many times this can lead to mental stress for individuals. Social media can more often increase the
+        fear of missing out, feelings of inadequacy, dissatisfaction, as well as isolation. In result these feelings
+        can negatively affect one's mood and worsen symptoms of depression, anxiety, and stress. The analyzed
+        information that we provide within this project includes datasets consisting of multi-domain social media
+        data used for identifying stress from five different categories of Reddit communities, mental health survey
+        responses, tweet sentiment analysis data, and general social media demographic data. The five categories
+        consist of Health, Online Communities, Social Networks, Text Data, and Mental Health.")
+      ),
+      img(
+        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+      )
+    ),
+    tags$div(
+      tags$div(
+        h3("Problem Domain"),
+        p(HTML("&emsp;"), "A couple of problems come up when addressing the design situation of this data analysis.
+        Most importantly cultural as well as social issues that tie into this topic of the correlation of stress and
+        indications of negative/positive emotion and social media. Within this article of \"How Different Generations
+        Use Social Media- and what this Means for Your Business\" It highlights the importance of understanding that
+        there is indeed a demographic bias when it comes to information coming from social media users. Generation Z
+        are extremely invested in the social media world, and \"...65% of Gen Z consumers have increased their use of
+        social media in the last year. (Sprout Social 2021).\" It was also stated that \"...Seventy-two percent of
+        Millenials state that social media is an essential part of their lives.\" With these given statements, it
+        is crucial to remember that majority of the data pulled from the opinions on the internet is coming from the
+        age groups of Generation Z and Millenial Users. It is important to remember that with each generation, there
+        is specific perspective in which they see the power of information on social media, and also take information
+        from social media in very different ways."),
+        p(HTML("&emsp;"), "In this current society, it should be emphasized that most social media is mostly utilized
+        by Generation Z as well as Millenials. In the 2022, survey of the \"consumption Frequency of News from Social
+        Media in the U.S. 2022, by Generation.\" Written by Amy Watson. it is stated that younger consumers were most
+        likely to use social media as a news source and that about 50% of Generation Z and 44% of millennials reporting
+        daily usage, and that in contrast, 43% of Boomers said that they rarely ever use social networks (Watson 2022).
+        With this given statement, we can also conclude that the data that we pull from the reddit dataset, is mostly
+        likely coming from an audience of individuals from the Generation Z and Millennial Age Group and should not make
+         the broad assumption that all social media users feel that there is a stress factor related with the usage
+         of social media."),
+        p(HTML("&emsp;"), "With this analysis would be the fact that this data is based off social media platforms and
+        the stakeholders would reflect that. Focusing on the stakeholders of the Dreaddit dataset, and in the example
+        of Reddit it is stated within The New Yorker article
+        \"Reddit and the Struggle to Detoxify the Internet\" written by Andrew Marantz, that \"... people who do use it
+        - redditors, as they're called- often use it all day long, to the near exclusion of anything else.\" It is
+        assumed that the data given in the set are all credible, and come from the opinions of credible users,
+        however this algorithm only checks for key words that correlate the word \"stress\" with social media and
+         gives a numbered count. All social media users implicated in our datasets are stakeholders, as well as
+         potential developers politicians, and mental health professionals."),
+         p(HTML("&emsp;"), "Benefits of this data analysis is the fact that we as viewers of this data can find
+         the correlation and links of stress and social media with key words through this algorithm and receive a clear
+         and concise number from the given pool of selected reddit posts. Harms may include the fact that it can not be
+         assumed or concluded that this data count can be utilized as evidence for an accurate and persuasive argument,
+         though this data can be used as an example to prove the point that there is correlation between stress and social
+         media; however to make a general claim off this data would be false information.")
+      ),
+      img(
+        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+      )
+    ),
     tags$div(
       tags$div(
         h3("Research Questions"),
@@ -21,7 +125,6 @@ conclusion <- tabPanel(
         ),
       ),
     ),
-  tags$section(
     tags$div(
       tags$div(
         h3("Datasets"),
@@ -50,32 +153,32 @@ conclusion <- tabPanel(
             tags$th("Dataset"),
             tags$th("Observations"),
             tags$th("Citation"),
-            tags&th("Url")
+            tags$th("Url")
           ),
           tags$tr(
             tags$td("Dreaddit"),
             tags$td("715 posts"),
             tags$td("Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021"),
-            tags&td("https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media")
+            tags$td("https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media")
           ),
           tags$tr(
             tags$td("Twitter Sentiment"),
             tags$td(" 	3,500 tweets"),
             tags$td("Wesley made this"),
-            tags&td("Wesley made this")
+            tags$td("Wesley made this")
           ),
           tags$tr(
             tags$td("General Social Media"),
             tags$td("6 platforms"),
             tags$td("Barnhart, Brent \"Social media demographics to inform your Brand's strategy in 2022.\"
             Sprout Social, 27 Oct. 2022"),
-            tags&td("https://sproutsocial.com/insights/new-social-media-demographics/")
+            tags$td("https://sproutsocial.com/insights/new-social-media-demographics/")
           ),
           tags$tr(
             tags$td("Impact Survey"),
             tags$td("13 indicators"),
             tags$td("Dixon, S. \"Impact of social media on Daily Life Worldwide\" Statista, 28 Apr. 2022"),
-            tags&td("https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/")
+            tags$td("https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/")
           ),
         ),
         p(HTML("&emsp;"), "Based on the data provided, it can help us form possible conclusions to our research
