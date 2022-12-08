@@ -31,5 +31,5 @@ interactive3 <- tabPanel(
       subreddits that have a positve emotion value of 5, contain more positivity
       in the posts than subreddits with a positve emotion value less than 5.)"),
   ),
-  plotlyOutput("plot3")
+  plotlyOutput("plot3,")
 )
