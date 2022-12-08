@@ -29,7 +29,7 @@ interactive3 <- tabPanel(
       detected. As for positive and negative emotion, a higher numerical value 
       correlates to a higher presence of the variable being analyzed. (For example
       subreddits that have a positve emotion value of 5, contain more positivity
-      in the posts than subreddits with a positve emotion value under 5.)"),
+      in the posts than subreddits with a positve emotion value less than 5.)"),
   ),
   plotlyOutput("plot3")
 )
