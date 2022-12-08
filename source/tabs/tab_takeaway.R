@@ -13,13 +13,34 @@ takeaway <- tabPanel(
      increase as well."),
     img(src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
         width = 500),
-    
     br(),
     br(),
+    br(),
     
-    p(HTML("&emsp;"), " 2). Takeaway 2"),
+    p(HTML("&emsp;"), " 2). Over 50% - the majority - of respondants indicated that 
+      social media affected at least one aspect of their life. While many indicate
+      that social media had an beneficial impact in communication ease and access to
+      information, social media also decreased civility online. When people are able
+      to hide behind a screen, their filters also disappear. Many prefer to speak 
+      their mind on social media and aren't afraid to reveal their actual emotions. 
+      Emotions such as anger, anxiety, and sadness become apparent in both posts that 
+      aren't deemed to contain any stress and posts that are. "),
+    img(src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Emotions_Stress.jpg",
+        width = 700),
+    br(),
+    br(),
+    br(),
+    
+    p(HTML("&emsp;"), " 3). The presence of stress is everywhere on social media platforms.
+    Whether it be that social media causes stress or that people who are stressed use
+    the platform as a ranting place, it's undeniable that stress and social media
+    come hand-in-hand. However, certain discussion threads and categories of interest
+    on these platforms contain much more or more less signs of containing stress.
+    For example, we see that subreddits titled Stess and Domesticviolence have
+    a higher stressed percentage than a subreddit titled Assistance."),
+  img(src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Emotions_Subreddit.jpg",
+        width = 600),
   ),
- 
 )
 
 
