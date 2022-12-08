@@ -5,9 +5,9 @@ account: socialmediaa
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7845191
-bundleId: 6609112
+bundleId: 6612399
 url: https://p11bc.shinyapps.io/socmed/
-when: 1670481293.54564
-lastSyncTime: 1670481293.54564
+when: 1670533139.36501
+lastSyncTime: 1670533139.36501
 asMultiple: FALSE
 asStatic: FALSE
