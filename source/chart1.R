@@ -36,3 +36,4 @@ chart1 <- ggplot(data = dreaddit_data, aes(x = Subreddit, y = Tone, fill = Tone)
   scale_fill_gradient(low = "yellow", high = "red")
   
 chart1
+
