@@ -86,8 +86,7 @@ server <- function(input, output) {
 
     return(chart3)
   })
-  
-  ### Takeaway
+
  
 }
 
