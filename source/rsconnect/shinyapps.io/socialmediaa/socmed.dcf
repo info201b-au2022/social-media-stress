@@ -1,0 +1,13 @@
+name: socmed
+title: socmed
+username:
+account: socialmediaa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7845191
+bundleId: 6609085
+url: https://p11bc.shinyapps.io/socmed/
+when: 1670480907.14469
+lastSyncTime: 1670480907.1447
+asMultiple: FALSE
+asStatic: FALSE
