@@ -62,7 +62,7 @@ server <- function(input, output) {
     docs <- tm_map(docs, removeWords, c(
       "will", "people", "stokes", "thinkwell", "ay", "yes", "indvseng", "pandya", "[][]'m", "[][]", "[][]'s",
       "said", "one", "just", "thats", "twitter", "ive", "hardik", "上海", "'re", "amp", "lol", "youre", "cant",
-      "yeah", "get", "[][]'ve", "推特刷粉", "推特粉丝", "上海线下", "ben", "’s", "tworldcup", "深圳", "like", "[]'s", "s", "dont"
+      "yeah", "get", "[][]'ve", "推特刷粉", "推特粉丝", "上海线下", "ben", "’s", "tworldcup", "深圳"
     ))
 
     gsub("https\\S*", "", docs)
