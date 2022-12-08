@@ -3,6 +3,142 @@ conclusion <- tabPanel(
   tags$section(
     tags$div(
       tags$div(
+        h3("Datasets"),
+        p(HTML("&emsp;"), "The data used in our project will be drawn from four datasets."),
+        tags$ol(
+          tags$li("Dreaddit - A Kaggle dataset derived from a report called Dreaddit: A Reddit Dataset for Stress
+      Analysis in Social Media. This dataset aims to analyze Reddit posts in relation to stress.
+      This is done through the use of a machine learning model that involves corpus analysis and the
+      use of Amazon Mechanical Turk workers. We are using the test data which consists of 715 posts,
+      while the train data is around 2500+ posts."),
+          tags$li("Twitter Sentiment Dataset - Using the snscrape package in Python, we were able to pull the
+      latest 3500 tweets from 11/10/2022. After the csv was created, we cleaned and manipulated some of it with Pandas
+      in order to run through the textblob library, a library generally meant for simple sentiment analysis and it
+      produced the polarity and objectivity columns. We were concerned about the accuracy of this, as the majority
+      of it was classified as neutral sentiment, so we added another model from HuggingFace. This one was more
+      accurate as it is a trained model which had been trained on over 150,000 tweets. Both of these are represented
+      in the dataset."),
+          tags$li("General Social Media Dataset - dataset consists of 6 social media platforms and 11 features describing
+      the demographics of monthly users. This dataset was created through a combination of various data sets found
+      from Sprout Social, Statistia, and other groups."),
+          tags$li("Social Media Impact Survey - This dataset consists of 13 described aspects of daily life. Respondents for the survey were asked to indicate whether,
+      based on their belief, social media had decreased, increased, or had no impact on each aspect.")
+        ),
+        tags$table(
+          tags$tr(
+            tags$th("Dataset"),
+            tags$th("Observations"),
+            tags$th("Citation"),
+            tags&th("Url")
+          ),
+          tags$tr(
+            tags$td("Dreaddit"),
+            tags$td("715 posts"),
+            tags$td("Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021"),
+            tags&td("https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media")
+          ),
+          tags$tr(
+            tags$td("Twitter Sentiment"),
+            tags$td(" 	3,500 tweets"),
+            tags$td("Wesley made this"),
+            tags&td("Wesley made this")
+          ),
+          tags$tr(
+            tags$td("General Social Media"),
+            tags$td("6 platforms"),
+            tags$td("Barnhart, Brent \"Social media demographics to inform your Brand's strategy in 2022.\"
+            Sprout Social, 27 Oct. 2022"),
+            tags&td("https://sproutsocial.com/insights/new-social-media-demographics/")
+          ),
+          tags$tr(
+            tags$td("Impact Survey"),
+            tags$td("13 indicators"),
+            tags$td("Dixon, S. \"Impact of social media on Daily Life Worldwide\" Statista, 28 Apr. 2022"),
+            tags&td("https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/")
+          ),
+        ),
+        p(HTML("&emsp;"), "Based on the data provided, it can help us form possible conclusions to our research
+        questions. If we analyze the amount of times that negative or positive words appear, we can see the
+        frequency at which online platforms negatively affect the mental wellbeing of the individuals in our
+        data pool. Moreover, if we were able to carefully look through each grouped subreddit, it's possible for
+        us to recognize which online communities experience more or less stress. For example, quotes obtained from s
+        ubreddit \"ptsd\" might contain more heavy stress indicators than quotes obtained from subreddit \"assistance\",
+        or vice versa. Hopefully, this will allow us to find common factors that routinely appear to affect mental
+        health, and see how the presence of social media further multiplies that effect.")
+      ),
+      img(
+        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+      )
+    ),
+    tags$div(
+      tags$div(
+        h3("Provenance"),
+        tags$ul(
+          tags$li("Data collection:"),
+          p("The datasets, titled \"Stress Analysis in Social Media\" were uploaded on Kaggle by Ruchi Bhata.
+          However it was Elsbeth Turcan and Kathleen McKeown who first collected the data in 2019. They collected
+          the data with the purpose of recognizing how stress, as a univeral factor experienced by mostly everyone,
+          exists specifically on online platforms. The other sources collected their data from Twitter and other social
+          media platforms with a similar purpose. Our Twitter Sentiment Analysis was made by Wesley and scraped tweets
+          made on 10 November, 2022. This dataset is intended to measure twitter sentiment from 3,500 tweets. The Impact
+          Survey dataset was published to Statista by S. Dixon on 28 April, 2022. However, the study the dataset is
+          based off of was created by CIGI online from 21 December, 2018 and 10 February, 2019. The General Social
+          Media dataset was uploaded to Sprout Social by Brent Barnhart on 27 October, 2022. However, the research was
+          conducted by various sources and the data was then compiled by Wesley into a dataset."),
+          tags$li("Funding:"),
+          p("The Dreaddit dataset was funded by a Presidential Fellowship from the Fu Foundation School of Engineering
+          and Applied Science at Columbia University. Financially speaking, those most likely to benefit from this study
+          would be mental health professionals such as psychiatrists, psychologists, or counselors. They would be more
+          equipped on how to deal with stress stemming from social media, and would be able to better treat patients that
+          are struggling with a similar issue. The Impact Survey was funded by CIGI-IPSOS Global Security. The General
+          Social Media dataset is compiled of different datasets created by various sources, which are available to
+          explore in our General-Social-Media.txt file in the /data directory."),
+          tags$li("Validation:"),
+          p("Each subset of the Dreaddit data was annotated by at least 5 works using Amazon Mechanical Turk in order
+          to figure out the characteristics of stress. Additionally, each data point how to pass a \"check\" question
+          randomly selected out of 50. There were also anonymous reviewers that would collectively agree on whether
+          or not a quote accurately demonstrated that high stress levels were present. The percent that agreed was
+          then also recorded in the data. After the multiple peer reviews and checkpoints, I would consider the
+          data to be reliable and trustworthy. Because the data pool isn't small as well, the sample size is large
+          enough so that other confounding variables wouldn't affect the outcome too much."),
+          p("The Twitter Sentiment Analysis dataset takes the last 3,500 tweets. However, because it takes all tweets
+          from the same time, the sample may be biased around a specific event or topic. Additionally, the script we
+          used is slightly better at identifying positive emotions over negative emotion. While it still gives us
+          valuable information about social media use, it is not entirely reliable for concrete claims about the
+          link between social media usage and emotions indicative of stress levels."),
+          p("The Impact Survey took samples from 1,000+ respondents worldwide ages 16-64 by a trusted Global Security
+          organization. Because of the sample size and source, I would consider this dataset reliable and trustworthy."),
+          p("The General Social Media dataset was published by various different organizations for the purpose of m
+          arketing research. Because of the sample size and variety of sources, I would consider this dataset reliable
+          and trustworthy."),
+          tags$li("Obtainment:"),
+          p("Our group obtained the data off of the website Kaggle, our own scripts, Statista, and Sprout Social.
+           We wanted to do something related to mental health, and the topic of social media's role in stress
+           immediately appealed to us. We credit both the authors and contributors of all the datasets/packages that we used.")
+        ),
+      ),
+    ),
+    tags$div(
+      tags$div(
+        h3("Implications"),
+        p(HTML("&emsp;"), "There are many implications that can be discerned concerning the results of our research question,
+        which aims to see the ties between social media usage and stress. The primary implication for policymakers
+        and people is that the policies in place for reducing stress and negativity at social media apps may not be
+        sufficient. Policymakers involved in social media should know to dedicate resources to think of ways to
+        potentially reduce this stress. Someone looking at the results of this project may be able to divert resources
+        to either fixing social media policies that may be a source of this stress or make improvements to mental health infrastructure."),
+        p(HTML("&emsp;"), "A huge topic of debate for platforms like Twitter is the line between freedom of speech and
+        hate speech. Social media facilitates ease of communication in both positive in negative ways which could
+        increase the stress of users, especially those of minority groups. This data could also prove useful to
+        developers who are interested in developing or modifying social media platforms to make them more user-friendly
+        and more positive experience for users."),
+      ),
+      img(
+        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+      )
+    ),
+    tags$div(
+      tags$div(
         h3("Limitations"),
         p(HTML("&emsp;"), "When working with social media datasets, one main limitation we have to consider
         is that social media platforms are often filled with duplicate, fake profiles. There’s essentially no
@@ -56,10 +192,10 @@ conclusion <- tabPanel(
           A significant number of people also responded that social media had no impact on various aspects of daily life.
           Our Twitter Sentiment analysis dataset and wordcloud showed evidence of both positive and negative tweets and
           sentiments as well. Our Dreaddit dataset showed subreddits with largely negative and stressed sentiments, with the exception of r/food_pantry."),
-      ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
+        ),
+        img(
+          src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+        )
       ),
     ),
     tags$div(
