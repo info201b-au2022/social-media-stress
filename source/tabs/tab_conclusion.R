@@ -387,5 +387,15 @@ conclusion <- tabPanel(
         src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
       )
     ),
+    h3("References"),
+    p("1. Bhatia, Ruchi. 'Stress Analysis in Social Media.' Kaggle, 2 July 2021, https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv."),
+p("'How Different Generations Use Social Media-and What This Means for Your Business.' Sprout Social, 22 July 2021, https://sproutsocial.com/insights/guides/social-media-use-by-generation/."),
+p("3. Marantz, Andrew. 'Reddit and the Struggle to Detoxify the Internet.' The New Yorker, 12 Mar. 2018, https://www.newyorker.com/magazine/2018/03/19/reddit-and-the-struggle-to-detoxify-the-internet."),
+p("4. Watson, Amy. 'News Consumption on Social Media U.S. by Generation 2022.' Statista, 18 Aug. 2022, https://www.statista.com/statistics/1124159/us-generational-social-media-news/."),
+p("5. J. Wang, K. Fu, C.T. Lu, 'SOSNet: A Graph Convolutional Network Approach to Fine-Grained Cyberbullying Detection,' Proceedings of the 2020 IEEE International Conference on Big Data (IEEE BigData 2020), December 10-13, 2020."),
+p("6. WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-Marquez. In Proceedings of the EMNLP 2017 Workshop on Computational Approaches to Subjectivity, Sentiment, and Social Media (WASSA), September 2017, Copenhagen, Denmark."),
+p("7. Saha, Sourav. 'Students Anxiety and Depression Dataset.' Kaggle, 12 Nov. 2022, https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset."),
+p("8. Dixon, S. 'Impact of social media on Daily Life Worldwide' Statista. 28 Apr. 2022, https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/ "),
+p("9. Barnhart, B. 'Social media demographics to inform your Brand's strategy in 2022.' Sprout Social. 27 Oct. 2022, https://sproutsocial.com/insights/new-social-media-demographics/"),
   )
 )
