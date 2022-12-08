@@ -14,7 +14,7 @@ these sub-directories
 |[summary_table.R](./summary_table.R) | This file renders a summary table generated from data from our datasets.
 |[ui.R](./ui.R) | This file contains our ui code for our shiny app.
 |[/tabs](./tabs) | This subdirectory contains the tab panels for our shiny app.
-|[/tabs/images](./tabs/images) | This subdirectory contains images used in the takeaway tab.
+|[/tabs/img](./tabs/img) | This subdirectory contains images used in the takeaway tab.
 |[/server](./server) | This subdirectory contains tab_chart3.R
 |[/rsconnect/shinyapps.io/socialmediaa](./rsconnect/shinyapps.io/socialmediaa) | This subdirectory contains socmed.dcf.
 
