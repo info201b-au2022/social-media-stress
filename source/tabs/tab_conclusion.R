@@ -29,9 +29,6 @@ conclusion <- tabPanel(
         balancing and mental health. To address this concern, we will do analysis of datasets containing Reddit
         posts, Twitter tweets, and survey responses.")
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
     tags$div(
       tags$div(
@@ -56,9 +53,6 @@ conclusion <- tabPanel(
         responses, tweet sentiment analysis data, and general social media demographic data. The five categories
         consist of Health, Online Communities, Social Networks, Text Data, and Mental Health.")
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
     tags$div(
       tags$div(
@@ -100,9 +94,6 @@ conclusion <- tabPanel(
          though this data can be used as an example to prove the point that there is correlation between stress and social
          media; however to make a general claim off this data would be false information.")
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
     tags$div(
       tags$div(
@@ -190,9 +181,6 @@ conclusion <- tabPanel(
         or vice versa. Hopefully, this will allow us to find common factors that routinely appear to affect mental
         health, and see how the presence of social media further multiplies that effect.")
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
     tags$div(
       tags$div(
@@ -257,9 +245,6 @@ conclusion <- tabPanel(
         developers who are interested in developing or modifying social media platforms to make them more user-friendly
         and more positive experience for users."),
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
     tags$div(
       tags$div(
@@ -283,9 +268,6 @@ conclusion <- tabPanel(
         communities on mental health without considering the mindsets and situations of people who are more likely to
         use it."),
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
     tags$div(
       tags$div(
@@ -317,9 +299,6 @@ conclusion <- tabPanel(
           Our Twitter Sentiment analysis dataset and wordcloud showed evidence of both positive and negative tweets and
           sentiments as well. Our Dreaddit dataset showed subreddits with largely negative and stressed sentiments, with the exception of r/food_pantry."),
         ),
-        img(
-          src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-        )
       ),
     ),
     tags$div(
@@ -351,9 +330,6 @@ conclusion <- tabPanel(
   perspective, the Generation Z and the Millennial group that has moreover a positive view on the utilization of
   social media, as it is a vital part of their everyday lives."),
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
     tags$div(
       tags$div(
@@ -383,11 +359,8 @@ conclusion <- tabPanel(
    perspectives of different age groups and demographic bias must always be considered when looking at the
    data sets."),
       ),
-      img(
-        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
-      )
     ),
-    h3("References"),
+   h3("References"),
     p("1. Bhatia, Ruchi. 'Stress Analysis in Social Media.' Kaggle, 2 July 2021, https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media?resource=download&amp;select=dreaddit-train.csv."),
 p("'How Different Generations Use Social Media-and What This Means for Your Business.' Sprout Social, 22 July 2021, https://sproutsocial.com/insights/guides/social-media-use-by-generation/."),
 p("3. Marantz, Andrew. 'Reddit and the Struggle to Detoxify the Internet.' The New Yorker, 12 Mar. 2018, https://www.newyorker.com/magazine/2018/03/19/reddit-and-the-struggle-to-detoxify-the-internet."),
