@@ -1,8 +1,12 @@
 survey_csv <- read.csv("https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/data/impact_survey.csv", stringsAsFactors = FALSE)
 
+colnames(survey_csv)[colnames(survey_csv) == 'Had.no.impact'] <- 'None'
+
+
 survey_plot <- survey_csv %>%
-  select(Global.impact.of.social.media.on.daily.life.2019, Increased, Decreased, Had.no.impact) %>%
+  select(Global.impact.of.social.media.on.daily.life.2019, Increased, Decreased, None) %>%
   gather(key = Impact, value = Percentage, -Global.impact.of.social.media.on.daily.life.2019)
+
 
 x_input <- selectInput(
   inputId = "x_var",
