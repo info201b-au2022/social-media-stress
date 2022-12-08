@@ -21,11 +21,11 @@ This [dataset](https://www.statista.com/statistics/1015131/impact-of-social-medi
 ## Data files
 |Data File/Folder Name | Brief Description|
 |---------------| -----------------|
-|[Dreaddit Dataset.csv](./Dreaddit-Dataset.csv) | This file is the Reddit test data.
+|[Dreaddit Dataset.csv](./Dreaddit-Dataset.csv) | This file is the Reddit test data from [this link](https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media)
 |[Twitter Sentiment Dataset.csv](./Twitter-Sentiment-Dataset.csv) | This is the Twitter data.
-|[General Social Media.csv](./General-Social-Media.csv) | This is the General Social Media data.
+|[General Social Media.csv](./General-Social-Media.csv) | This is the General Social Media data from [this link](https://sproutsocial.com/insights/new-social-media-demographics/)
 |[General Social Media.txt](./General-Social-Media.txt) | This file contains links nested inside the source of General-Social-Media.csv.
-|[impact_survey.csv](./impact_survey.csv) | This file is the Impact Survey data.
+|[impact_survey.csv](./impact_survey.csv) | This file is the Impact Survey data from [this link](https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/)
 |[drop_test_cols.R](./drop_test_cols.R) | This file cleans the dreaddit dataset.
 |[/raw](./raw) | The raw folder are the datasets before cleaning and processing with sentiment analysis.
 |[/py-scripts](./py-scripts) | source scripts and jupyter notebooks for the sentiment analysis
