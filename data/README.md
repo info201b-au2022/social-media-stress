@@ -23,9 +23,12 @@ This [dataset](https://www.statista.com/statistics/1015131/impact-of-social-medi
 |---------------| -----------------|
 |[Dreaddit Dataset.csv](./Dreaddit-Dataset.csv) | This file is the Reddit test data.
 |[Twitter Sentiment Dataset.csv](./Twitter-Sentiment-Dataset.csv) | This is the Twitter data.
-|[General Social Media.csv](data/General Social Media.csv) | This is the General Social Media data.
+|[General Social Media.csv](./General-Social-Media.csv) | This is the General Social Media data.
+|[General Social Media.txt](./General-Social-Media.txt) | This file contains links nested inside the source of General-Social-Media.csv.
 |[impact_survey.csv](./impact_survey.csv) | This file is the Impact Survey data.
-| raw | The raw folder are the datasets before cleaning and processing with sentiment analysis.
-| py-scripts | source scripts and jupyter notebooks for the sentiment analysis
+|[drop_test_cols.R](./drop_test_cols.R) | This file cleans the dreaddit dataset.
+|[/raw](./raw) | The raw folder are the datasets before cleaning and processing with sentiment analysis.
+|[/py-scripts](./py-scripts) | source scripts and jupyter notebooks for the sentiment analysis
+ 
 
 

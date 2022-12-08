@@ -7,9 +7,9 @@ as follows:
 
 |Report | Brief Description|
 |---------------| -----------------|
-|[Project Proposal](p01-proposal.md) | This is our P01 Project Proposal.
-|[Exploratory Data Analysis](./index.Rmd) | This is our P02 Exploratory Data Analysis.
-|[Interactive Vizualizaiton](./xxx) | This is our P03 Interactive Visualization, which is the final version of our report.
+|[p01-proposal.md](p01-proposal.md) | This is our P01 Project Proposal.
+|[index.Rmd](./index.Rmd) | This is our P02 Exploratory Data Analysis.
+|[final-project.md](./final-project.md) | This is our P03 final report page, which is the final version of our report page.
 
 
 

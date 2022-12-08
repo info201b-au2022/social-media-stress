@@ -13,6 +13,8 @@ these sub-directories
 |[styles.scss](./styles.scss) | This file contains the css code for our shiny app. 
 |[summary_table.R](./summary_table.R) | This file renders a summary table generated from data from our datasets. 
 |[ui.R](./ui.R) | This file contains our ui code for our shiny app.
-|[/tabs](./tabs) | This directory contains the tab panels for our shiny app.
+|[/tabs](./tabs) | This subdirectory contains the tab panels for our shiny app.
+|[/server](./server) | This subdirectory contains tab_chart3.R
+|[/rsconnect/shinyapps.io/socialmediaa](./rsconnect/shinyapps.io/socialmediaa) | This subdirectory contains socmed.dcf.
 
 
