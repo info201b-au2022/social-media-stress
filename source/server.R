@@ -43,6 +43,7 @@ server <- function(input, output) {
   output$plot3 <- renderPlotly({
     return(plot_stress_analysis(input$input_stress, input$input_variable))
   })
+  outputOptions(output, "plot3", suspendWhenHidden = FALSE)
   ###
   
   output$wordcloud <- renderPlot({
