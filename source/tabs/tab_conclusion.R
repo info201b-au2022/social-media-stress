@@ -1,7 +1,67 @@
 conclusion <- tabPanel(
   "Conclusion",
   tags$section(
-    h3("Findings"),
+    tags$div(
+      tags$div(
+        h3("Limitations"),
+        p(HTML("&emsp;"), "When working with social media datasets, one main limitation we have to consider
+        is that social media platforms are often filled with duplicate, fake profiles. There’s essentially no
+        limit to the number of accounts a person can have, provided that they have a different form of contact
+        to set up the account. Moreover, because one of the datasets we have is essentially from various Reddit threads,
+        the methods used to identify stress are limited to key words and subreddits titled as “anxiety”, “ptsd”,
+        “assistance,” etc. There may be greater amounts of stress shown from other categories of Reddit communities,
+        yet, our dataset is limited to a certain extent. It’s also sometimes in a person’s self-interest to
+        exaggerate when they’re using social media as a venting mechanism, which can cause the algorithm to detect
+        more stress than the person actually has."),
+        p(HTML("&emsp;"), "A limitation that we have associated with our topic in general is that the data we are
+        able to draw from is not naturally occurring or quantifiable with numbers. All the data we draw has to go
+        through natural language processing or human analysis of words and thus can be subjective or dependent on
+        the method that was used to train a machine learning model. This means that it is inherently more difficult
+        for us to apply the results of the datasets we choose and also limits the amount of datasets that are useful
+         to us as opposed to a topic like greenhouse gas emissions from cars."),
+        p(HTML("&emsp;"), "Additionally, it is difficult to make a concrete claim about the effect of sensitive online
+        communities on mental health without considering the mindsets and situations of people who are more likely to
+        use it."),
+      ),
+      img(
+        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+      )
+    ),
+    tags$div(
+      tags$div(
+        h3("Findings"),
+        tags$ol(
+          tags$li("What factors might contribute to stress experienced as a result of social media?"),
+          p("Respondents in the
+          Impact Survey dataset are more likely to indicate that social media has improved quality of life in areas
+          such as overall quality of life, ease of communication, and access to information; they are also more likely
+          to indicate that social media has worsened distractions during the day, personal privacy, and polarization in
+          politics. While social media may make people’s lives more convenient, it also comes with increased risks and
+          new forms of censorship and the control of the flow of information, which could pose as stressors
+          for social media users."),
+          tags$li("What factors might contribute to stress experienced as a result of social media?"),
+          p("Respondents in the
+          Impact Survey dataset are more likely to indicate that social media has improved quality of life in areas such
+          as overall quality of life, ease of communication, and access to information; they are also more likely to
+          indicate that social media has worsened distractions during the day, personal privacy, and polarization in
+          politics. While social media may make people’s lives more convenient, it also comes with increased risks
+          and new forms of censorship and the control of the flow of information, which could pose as stressors for
+          social media users. Additionally, our General Social Media dataset shows evidence of gender disparities across
+          social media platforms. This could also be a potential stressor for the minority group on each respective platform."),
+          tags$li("What impact does social media have on people’s levels of stress?"),
+          p("Based on our data and data
+          visualizations, it is apparent that social media plays neither a purely negative nor purely positive role
+          in stress, anxiety, or mental health. In our Impact Survey dataset, responses indicate that social media can
+          both improve and worsen mental health and stress levels, depending on the aspect of daily life recorded.
+          A significant number of people also responded that social media had no impact on various aspects of daily life.
+          Our Twitter Sentiment analysis dataset and wordcloud showed evidence of both positive and negative tweets and
+          sentiments as well. Our Dreaddit dataset showed subreddits with largely negative and stressed sentiments, with the exception of r/food_pantry."),
+      ),
+      img(
+        src = "https://raw.githubusercontent.com/info201b-au2022/social-media-stress/main/source/tabs/img/Pie_Chart.jpg",
+      )
+      ),
+    ),
     tags$div(
       tags$div(
         h3("Discussion"),
