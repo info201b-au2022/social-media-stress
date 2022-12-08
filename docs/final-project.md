@@ -66,8 +66,8 @@ The fourth [dataset](https://www.statista.com/statistics/1015131/impact-of-socia
 |---------------| -------------- | -------------- | --------------
 | Dreaddit |  715 posts | Bhatia, Ruchi. “Stress Analysis in Social Media.” Kaggle, 2 July 2021 | https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media |
 | Twitter Sentiment | 3,500 tweets | We made this | We made this
-| General Social Media | 6 | Barnhart, Brent "Social media demographics to inform your Brand's strategy in 2022." Sprout Social. 27 Oct. 2022, https://sproutsocial.com/insights/new-social-media-demographics/ |
-| Impact Survey | 13 | Dixon, S. "Impact of social media on Daily Life Worldwide" Statista. 28 Apr. 2022, https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/ |
+| General Social Media | 6 | Barnhart, Brent "Social media demographics to inform your Brand's strategy in 2022." Sprout Social. 27 Oct. 2022 | https://sproutsocial.com/insights/new-social-media-demographics/ |
+| Impact Survey | 13 | Dixon, S. "Impact of social media on Daily Life Worldwide" Statista. 28 Apr. 2022 | https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/ |
 
 ##### Answering Our Research Questions
 Based on the data provided, it can help us form possible conclusions to our research questions. If we analyze the amount of times that negative or positive words appear, we can see the frequency at which online platforms negatively affect the mental wellbeing of the individuals in our data pool. Moreover, if we were able to carefully look through each grouped subreddit, it's possible for us to recognize which online communities experience more or less stress. For example, quotes obtained from subreddit "ptsd" might contain more heavy stress indicators than quotes obtained from subreddit "assistance", or vice versa. Hopefully, this will allow us to find common factors that routinely appear to affect mental health, and see how the presence of social media further multiplies that effect.
