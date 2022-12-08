@@ -1,3 +1,5 @@
+source("tabs/tab_chart3.R")
+
 server <- function(input, output) {
   output$general_chart <- renderPlotly({
     print(input$xvar)
@@ -36,6 +38,12 @@ server <- function(input, output) {
     return(p2)
   })
 
+  #Interactive Visualization 3
+  output$plot3 <- renderPlotly({
+    return(plot_stress_analysis(input$input_stress, input$input_variable))
+  })
+  ###
+  
   output$wordcloud <- renderPlot({
     twt_sentiment <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Twitter-Sentiment-Dataset.csv", stringsAsFactors = FALSE)
     twt_text <- twt_sentiment %>% filter(Cardiff.Sentiment == input$sentiment)
