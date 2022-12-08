@@ -44,7 +44,7 @@ server <- function(input, output) {
     return(plot_stress_analysis(input$input_stress, input$input_variable))
   })
   outputOptions(output, "plot3", suspendWhenHidden = FALSE)
-  ###
+  ####
   
   output$wordcloud <- renderPlot({
     twt_sentiment <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Twitter-Sentiment-Dataset.csv", stringsAsFactors = FALSE)

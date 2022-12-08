@@ -20,33 +20,30 @@ source("tabs/tab_conclusion.R")
 source("tabs/tab_takeaway.R")
 
 #### interactive visualization 3
-chart3_sidebar_content <- sidebarPanel(
-  selectInput(
-    inputId = "input_stress",
-    label = "Select Stress Category: ",
-    choices = stress_status,),
-  selectInput(
-    inputId = "input_variable",
-    label = "Select Variable to be Analyzed Quantitatively: ",
-    choices = c("Tone",
-                "Positive Emotion",
-                "Negative Emotion" ))
-)
-chart3_main_content <- mainPanel(
-  plotlyOutput("plot3")
+stress_input <- selectInput (
+  "input_stress",
+  label = "Select Stress Category: ",
+  choices = stress_status)
+
+variable_input <- selectInput (
+  "input_variable",
+  label = "Select Variable to be Analyzed Quantitatively: ",
+  choices = c("Tone",
+              "Positive Emotion",
+              "Negative Emotion" )
 )
 
 interactive3 <- tabPanel(
   "Interactive 3",
   br(),
-  sidebarLayout(
-    chart3_sidebar_content,
-    chart3_main_content
+  tags$section (
+    stress_input,
+    variable_input,
   ),
+  plotlyOutput("plot3")
 )
 
-#####
-
+##### end of interactive 3
 
 ui <- fluidPage(
   tags$head(tags$style(css)),
