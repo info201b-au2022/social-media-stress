@@ -1,6 +1,6 @@
 # Data
 
-In this project, we are making use of two datasets.
+In this project, we are making use of four datasets.
 
 ## Dataset 1: Dreaddit
 
@@ -23,8 +23,9 @@ This [dataset](https://www.statista.com/statistics/1015131/impact-of-social-medi
 |---------------| -----------------|
 |[Dreaddit Dataset.csv](./Dreaddit-Dataset.csv) | This file is the Reddit test data.
 |[Twitter Sentiment Dataset.csv](./Twitter-Sentiment-Dataset.csv) | This is the Twitter data.
-|[General Social Media.csv](./General Social Media.csv) | This is the General Social Media data.
+|[General Social Media.csv](data/General Social Media.csv) | This is the General Social Media data.
 |[impact_survey.csv](./impact_survey.csv) | This file is the Impact Survey data.
 | raw | The raw folder are the datasets before cleaning and processing with sentiment analysis.
 | py-scripts | source scripts and jupyter notebooks for the sentiment analysis
+
 
