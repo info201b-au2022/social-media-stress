@@ -1,4 +1,4 @@
-source("tabs/tab_chart3.R")
+source("server/tab_chart3.R")
 
 server <- function(input, output) {
   output$general_chart <- renderPlotly({
@@ -45,7 +45,7 @@ server <- function(input, output) {
   })
   outputOptions(output, "plot3", suspendWhenHidden = FALSE)
   ####
-  
+
   output$wordcloud <- renderPlot({
     twt_sentiment <- read.csv("https://raw.githubusercontent.com/info201b-au2022/Project-11-BC/main/data/Twitter-Sentiment-Dataset.csv", stringsAsFactors = FALSE)
     twt_text <- twt_sentiment %>% filter(Cardiff.Sentiment == input$sentiment)
