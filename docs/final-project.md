@@ -122,7 +122,4 @@ We'd like to thank our professor, David Hendry, and our TA, Shiina Sugioka.
 6. WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-Marquez. In Proceedings of the EMNLP 2017 Workshop on Computational Approaches to Subjectivity, Sentiment, and Social Media (WASSA), September 2017, Copenhagen, Denmark.
 7. Saha, Sourav. “Students Anxiety and Depression Dataset.” Kaggle, 12 Nov. 2022, https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset.
 8. Dixon, S. "Impact of social media on Daily Life Worldwide" Statista. 28 Apr. 2022, https://www.statista.com/statistics/1015131/impact-of-social-media-on-daily-life-worldwide/ 
-<<<<<<< HEAD
 9. Barnhart, B. "Social media demographics to inform your Brand's strategy in 2022." Sprout Social. 27 Oct. 2022, https://sproutsocial.com/insights/new-social-media-demographics/
-=======
->>>>>>> f644595dc6eaf786b2449b8c2b26a0b011544b08
